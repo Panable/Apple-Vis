@@ -1,0 +1,41 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: table;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background: #181818;
+    color: #e4e4ef;
+}
+
+a {
+    font-kerning: normal;
+    font-family: 'Cantarell', sans-serif;
+    font-size: 25px;
+    color: #73c936;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'Cantarell', sans-serif;
+    font-size: 80px;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-family: 'Cantarell', sans-serif;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.white {
+    color: #e4e4ef;
+}
+
+.green {
+	color:#73c936; 
+}
+

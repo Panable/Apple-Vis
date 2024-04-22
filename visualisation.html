@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lab 5-2</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <button id="sort">sort ascending</button>
+    <button id="sortDesc">sort descending</button>
+    <button id="remove">Remove Last Value</button>
+    <button id="custom">Add Random</button>
+    <button id="trans1">Transition 1</button>
+    <button id="trans2">Transition 2</button>
+    <button id="redraw">redraw[testing]</button>
+    <h1>CSV!</h1>
+
+    <div id="charts"></div>
+
+    <select name="transitions" id="transitions">
+      <option value="d3.easeCubicInOut">d3.easeCubicInOut</option>
+      <option value="d3.EaseCircleIn">d3.EaseCircleIn</option>
+      <option value="d3.easeCircleOut">d3.easeCircleOut</option>
+      <option value="d3.easeElasticOut">d3.easeElasticOut</option>
+      <option value="d3.easeExpIn">d3.easeExpIn</option>
+      <option value="d3.easePolyIn">d3.easePolyIn</option>
+    </select>
+
+    <label for="delay">Delay</label>
+    <input id="delay" type="number" name="delay" value="1000" />
+    <label for="duration">Duration</label>
+    <input id="duration" type="number" name="duration" value="1000" />
+    <br />
+
+    <footer>Data Visualisation <br />Dhanveer Ramnauth</footer>
+  </body>
+</html>
