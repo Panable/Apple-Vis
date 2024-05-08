@@ -1,0 +1,19 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-c",
+      "-Wall",
+      "-Wextra",
+      "-std=c11",
+      "-pedantic",
+      "-ggdb",
+      "-o",
+      "build/process",
+      "src/main.c"
+    ],
+    "directory": "/home/thepanable/Homework/Apple-Vis/data_processing",
+    "file": "/home/thepanable/Homework/Apple-Vis/data_processing/src/main.c",
+    "output": "/home/thepanable/Homework/Apple-Vis/data_processing/build/process"
+  }
+]
