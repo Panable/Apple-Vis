@@ -12,11 +12,33 @@ function init()
 
     const g = svg.append('g');
 
-    d3.json("countries-110m.json").then(data => {
+    let color_pallete = [
+        "#edf8fb",
+        "#b3cde3",
+        "#8c96c6",
+        "#8856a7",
+        "#810f7c",
+    ];
+
+let color = d3.scaleQuantize()
+              .range(color_pallete);
+
+    d3.json("modified_countries.json").then(data => {
         console.log(data.objects.countries);
         const countries = topojson.feature(data, data.objects.countries);
+        color.domain([
+            0, 100
+            ]);
 
-        g.selectAll('path').data(countries.features).enter().append('path').attr('class', 'country').attr('d',path);
+        g.selectAll('path').data(countries.features).enter().append('path').attr('class', 'country').attr('d',path)
+            .style("fill", function (d) {
+                let value = d.properties.percentage;
+                if (value) {
+                    return color(value);
+                 } else {
+                    return "#ccc";
+                 }
+            });
     });
 }
 

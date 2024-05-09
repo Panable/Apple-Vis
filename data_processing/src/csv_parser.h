@@ -26,6 +26,10 @@ void populate_fields(char* line, size_t line_index, CSV* csv);
 void populate_field_names(const char* line, CSV* csv);
 CSV* ParseCSV(const char* file_name);
 char* get_field(CSV* csv, size_t line, const char* name);
+int get_column_index(CSV* csv, const char* name);
+int search_field(CSV* csv, const char* search_name, const char* column_name);
+
+#define CSV_PARSER_IMPLEMENTATION
 
 // IMPLEMENTATIONS
 #ifdef CSV_PARSER_IMPLEMENTATION
@@ -151,14 +155,14 @@ CSV* ParseCSV(const char* file_name)
     size_t longest_line_length;
 
     count_lines_in_file(file_name, &num_lines, &longest_line_length);
-    printf("number of lines is: %zu, longest line is %zu\n",
+    printf("number of lines is: %zu, longest line is %zu in total csv\n",
             num_lines, longest_line_length);
 
     FILE* stream = fopen(file_name, "r");
     char line[++longest_line_length];
 
     CSV* csv = malloc(sizeof(CSV));
-    csv->num_lines = num_lines;
+    csv->num_lines = num_lines - 1; // we dont care about the first line (col_names);
     
     size_t line_index = 0;
     while (fgets(line, 1024, stream))
@@ -178,6 +182,23 @@ int get_column_index(CSV* csv, const char* name) {
     for (int i = 0; i < (int)csv->num_fields; i++) {
         int result = strcmp(csv->field_name[i], name);
         if (result == 0) return i;
+    }
+
+    return -1;
+}
+
+// returns line number
+int search_field(CSV* csv, const char* search_name, const char* column_name)
+{
+    int raw_col_index = get_column_index(csv, column_name);
+    if (raw_col_index == -1) 
+        return -1;
+
+    size_t col_index = (int) raw_col_index;
+
+    for (size_t i = 0; i < csv->num_lines; i++) {
+       if (strcmp(csv->lines[i][col_index], search_name) == 0)
+           return (int) i;
     }
 
     return -1;
