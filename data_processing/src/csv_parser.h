@@ -6,9 +6,9 @@ extern char* strdup(const char*);
 #include <stdio.h>
 #include <assert.h>
 #include <string.h>
+#include <stdbool.h>
 
 // DECLARATIONS
-
 typedef struct CSV {
     char** field_name;
     size_t num_lines;
@@ -28,7 +28,10 @@ CSV* ParseCSV(const char* file_name);
 char* get_field(CSV* csv, size_t line, const char* name);
 int get_column_index(CSV* csv, const char* name);
 int search_field(CSV* csv, const char* search_name, const char* column_name);
+void remove_row(CSV* csv, size_t line);
+void csv_dump(CSV* csv);
 
+// FOR TESTING -> LSP BREAKS
 #define CSV_PARSER_IMPLEMENTATION
 
 // IMPLEMENTATIONS
@@ -200,11 +203,11 @@ int search_field(CSV* csv, const char* search_name, const char* column_name)
        if (strcmp(csv->lines[i][col_index], search_name) == 0)
            return (int) i;
     }
-
     return -1;
 }
 
-char* get_field(CSV* csv, size_t line, const char* name) {
+char* get_field(CSV* csv, size_t line, const char* name)
+{
     int raw_col_index = get_column_index(csv, name);
     if (raw_col_index == -1) 
         return "";
@@ -213,6 +216,50 @@ char* get_field(CSV* csv, size_t line, const char* name) {
     assert(col_index < csv->num_fields);
     
     return csv->lines[line][col_index];
+}
+
+void remove_row(CSV* csv, size_t line)
+{
+    // Check out of bounds.
+    assert(line < csv->num_lines);
+    
+    
+    // last element
+    bool last_element = line == csv->num_lines - 1;
+
+    // dont need to move memory, if it is last element, just free.
+    if (!last_element) {
+        memmove(csv->lines + line, csv->lines + line + 1, sizeof(char**) * (csv->num_lines - line));
+    }
+
+    for (size_t i = 0; i < csv->num_fields; i++)
+        free(csv->lines[line][i]);
+    free(csv->lines[line]);
+
+    csv->num_lines--;
+}
+
+void csv_dump(CSV* csv)
+{
+        
+    //print field names first
+    for (size_t i = 0; i < csv->num_fields; i++) {
+        printf("%s", csv->field_name[i]);
+        if (i < csv->num_fields - 1)
+        printf(", ");
+    }
+    printf("\n");
+
+    for (size_t i = 0; i < csv->num_lines; i++) {
+        for (size_t j = 0; j < csv->num_fields; j++) {
+            printf("%s", csv->lines[i][j]);
+            if (j < csv->num_fields - 1)
+            printf(", ");
+        }
+        printf("\n");
+    }
+
+    printf("num lines is %zu\n", csv->num_lines);
 }
 
 #endif // CSV_PARSER_IMPLEMENTATION
