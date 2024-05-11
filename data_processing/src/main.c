@@ -39,7 +39,7 @@ cJSON* open_json(const char* file_name)
 
 void process_world_map(void)
 {
-    CSV* csv = ParseCSV("fruit_consumption_all_countries.csv");
+    CSV* csv = parse_csv("fruit_consumption_all_countries.csv");
     csv_dump(csv);
 
     cJSON* json = open_json("../countries-110m.json");
@@ -78,13 +78,200 @@ void process_world_map(void)
     cJSON_Delete(json);
 }
 
+int find_matching_method(CSV* csv, const char* country, size_t cur_index)
+{   
+    size_t country_index = get_column_index(csv, "Reference area");
+    size_t measure_index = get_column_index(csv, "MEASURE");
+    size_t method_index = get_column_index(csv, "Measurement Method");
+
+    for (size_t i = cur_index; i < csv->num_lines; i++) {
+        char* cur_country = csv->lines[i][country_index];
+        char* cur_measure = csv->lines[i][measure_index];
+
+        
+        // country and measure not what we are looking for.
+
+        if (strcmp(cur_country, country) != 0)
+            continue;
+        if (strcmp(cur_measure, "SP_OVRGHT_OBS") != 0)
+            continue;
+        return i;
+    }
+
+    return -1;
+}
+
+int find_matching_country(CSV* csv, const char* search_measure, const char* search_country, size_t cur_index)
+{   
+    size_t country_index = get_column_index(csv, "Reference area");
+    size_t measure = get_column_index(csv, "MEASURE");
+
+    for (size_t i = cur_index; i < csv->num_lines; i++) {
+        char* cur_country = csv->lines[i][country_index];
+        char* cur_measure  = csv->lines[i][measure];
+        
+        if (strcmp(cur_country, search_country) != 0)
+            continue;
+
+        if (strcmp(cur_measure, search_measure) != 0)
+            continue;
+
+        return i;
+    }
+
+    return -1;
+}
+
+CSV* clean_fruit_to_obesity_rate(void)
+{
+    CSV* csv = parse_csv("fruit_to_obesity_rate.csv");
+    // 1. Favour measured over self-reporting
+    
+    size_t country = get_column_index(csv, "Reference area");
+    size_t measure = get_column_index(csv, "MEASURE");
+    size_t method = get_column_index(csv, "Measurement method");
+
+    for (int i = 0; i < (int)csv->num_lines; i++) {
+        char* cur_country = csv->lines[i][country];
+        char* cur_measure = csv->lines[i][measure];
+        char* cur_method  = csv->lines[i][method];
+
+        if (strcmp(cur_measure, "SP_OVRGHT_OBS") == 0) {
+            int matching_method_index = find_matching_method(csv, cur_country, i + 1);
+
+            // matching survey method exists!
+            if (matching_method_index != -1) {
+                // delete the self-reporting method.
+                if (strcmp(cur_method, "Self-reporting") == 0) {
+                    remove_row(csv, i);
+                    i -= 1;
+                    continue;
+                } else if (strcmp(csv->lines[matching_method_index][method], "Self-reporting") == 0) {
+                    i -= 1;
+                    remove_row(csv, matching_method_index);
+                    continue;
+                } else {
+                    fprintf(stderr, "Something went wrong here\n");
+                }
+                continue;
+            }
+        }
+
+        bool is_fruit_consumption = strcmp(cur_measure, "SP_CFRD") == 0;
+        bool is_overweight_or_obese = strcmp(cur_measure, "SP_OVRGHT_OBS") == 0;
+
+        int matching_country_index = -1;
+        if (is_fruit_consumption)
+            matching_country_index = find_matching_country(csv, "SP_OVRGHT_OBS", cur_country, 0);
+        else if (is_overweight_or_obese)
+            matching_country_index = find_matching_country(csv, "SP_CFRD", cur_country, 0);
+
+        if (matching_country_index == -1) {
+            remove_row(csv, i);
+            i -= 1;
+        }
+    }
+
+    write_csv(csv, "test.csv");
+    return csv;
+}
+
+cJSON* find_country(cJSON* json, const char* country_name)
+{
+    cJSON* country = NULL; 
+    cJSON_ArrayForEach(country, json) {
+        cJSON* name = get_obj(country, "name");
+        if (name && cJSON_IsString(name)) {
+            if (strcmp(name->valuestring, country_name) != 0) continue;
+            return country;
+        }
+    }
+    return NULL;
+}
+
+cJSON* fruit_obs_to_json(CSV* csv)
+{
+    cJSON* countries = cJSON_CreateArray();
+
+    size_t country = get_column_index(csv, "Reference area");
+    size_t measure = get_column_index(csv, "MEASURE");
+    size_t method = get_column_index(csv, "Measurement method");
+    size_t value = get_column_index(csv, "OBS_VALUE");
+    size_t year = get_column_index(csv, "TIME_PERIOD");
+
+    for (size_t i = 0; i < csv->num_lines; i++) {
+        char* cur_country = csv->lines[i][country];
+        char* cur_measure = csv->lines[i][measure];
+        char* cur_value  = csv->lines[i][value];
+        char* cur_year = csv->lines[i][year];
+        char* cur_method = csv->lines[i][method];
+        
+
+        // find existing country.
+        cJSON* country = find_country(countries, cur_country);
+        
+        // not found -> create a new country
+        if (!country) {
+            country = cJSON_CreateObject();
+            cJSON_AddStringToObject(country, "name", cur_country);
+            cJSON_AddItemToArray(countries, country);
+        }
+        
+        bool is_fruit_consumption = strcmp(cur_measure, "SP_CFRD") == 0;
+        bool is_overweight_or_obese = strcmp(cur_measure, "SP_OVRGHT_OBS") == 0;
+        
+        if (is_fruit_consumption) {
+           cJSON* fruit_consumption = cJSON_CreateObject();
+           double percentage = atof(cur_value);
+           double year = atof(cur_year);
+           cJSON_AddNumberToObject(fruit_consumption, "percentage", percentage);
+           cJSON_AddNumberToObject(fruit_consumption, "year", year);
+           cJSON_AddItemToObject(country, "fruit_consumption", fruit_consumption);
+        } else if (is_overweight_or_obese) {
+           cJSON* overweight = cJSON_CreateObject();
+           double percentage = atof(cur_value);
+           double year = atof(cur_year);
+           cJSON_AddNumberToObject(overweight, "percentage", percentage);
+           cJSON_AddNumberToObject(overweight, "year", year);
+           cJSON_AddStringToObject(overweight, "measurement_method", cur_method);
+           cJSON_AddItemToObject(country, "overweight_or_obese", overweight);
+        } else {
+            fprintf(stderr, "Something went wrong here\n");
+        }
+    }
+
+
+    return countries;
+}
+
 int main(void)
 {
-    CSV* csv = ParseCSV("fruit_to_obesity_rate.csv");
-    printf("num bytes is %zu\n", num_bytes_with_delim(csv));
-    
-    write_csv(csv, "test.csv");
+    CSV* csv = clean_fruit_to_obesity_rate();
+    //csv_dump(csv);
+    cJSON* json = fruit_obs_to_json(csv);
+    //printf("%s\n", cJSON_Print(json));
+    write_json(json, "test.json");
+    return 0;
 
-    //printf("%s", csv_print(csv));
+    cJSON* countries = cJSON_CreateArray();
+    cJSON* country = cJSON_CreateObject();
+
+    cJSON* name = cJSON_CreateString("Australia");
+    cJSON* fruit_consumption = cJSON_CreateObject();
+    cJSON_AddNumberToObject(fruit_consumption, "percentage", 99.99);
+    cJSON_AddNumberToObject(fruit_consumption, "year", 2003);
+    cJSON* overweight_obese = cJSON_CreateObject();
+    cJSON_AddNumberToObject(overweight_obese, "percentage", 69.99);
+    cJSON_AddNumberToObject(overweight_obese, "year", 2033);
+    cJSON_AddStringToObject(overweight_obese, "measurement_method", "Survey");
+
+    cJSON_AddItemToObject(country, "name", name);
+    cJSON_AddItemToObject(country, "fruit_consumption", fruit_consumption);
+    cJSON_AddItemToObject(country, "overweight_obese", overweight_obese);
+
+    cJSON_AddItemToArray(countries, country);
+
+    printf("%s\n", cJSON_Print(countries));
+    csv_free(csv);
     return 0;
 }

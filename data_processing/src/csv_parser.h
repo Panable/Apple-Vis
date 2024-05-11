@@ -25,7 +25,7 @@ void count_lines_in_file(const char* file_name,
 void csv_free(CSV* csv);
 void populate_fields(char* line, size_t line_index, CSV* csv);
 void populate_field_names(const char* line, CSV* csv);
-CSV* ParseCSV(const char* file_name);
+CSV* parse_csv(const char* file_name);
 char* get_field(CSV* csv, size_t line, const char* name);
 int get_column_index(CSV* csv, const char* name);
 int search_field(CSV* csv, const char* search_name, const char* column_name);
@@ -155,7 +155,7 @@ void populate_field_names(const char* line, CSV* csv)
 }
 
 
-CSV* ParseCSV(const char* file_name)
+CSV* parse_csv(const char* file_name)
 {
     size_t num_lines;
     size_t longest_line_length;
@@ -209,9 +209,9 @@ int search_field(CSV* csv, const char* search_name, const char* column_name)
     return -1;
 }
 
-char* get_field(CSV* csv, size_t line, const char* name)
+char* get_field(CSV* csv, size_t line, const char* col_name)
 {
-    int raw_col_index = get_column_index(csv, name);
+    int raw_col_index = get_column_index(csv, col_name);
     if (raw_col_index == -1) 
         return "";
 
@@ -232,7 +232,7 @@ void remove_row(CSV* csv, size_t line)
 
     char** row_to_remove = csv->lines[line];
 
-    // dont need to move memory, if it is last element, just free.
+    // dont need to move memory if it is last element, just free.
     if (!last_element) {
         memmove(csv->lines + line, csv->lines + line + 1, sizeof(char**) * (csv->num_lines - line));
     }
