@@ -29,6 +29,8 @@ char* get_field(CSV* csv, size_t line, const char* name);
 int get_column_index(CSV* csv, const char* name);
 int search_field(CSV* csv, const char* search_name, const char* column_name);
 void remove_row(CSV* csv, size_t line);
+void write_csv(CSV* csv, const char* file_name);
+char* csv_print(CSV* csv);
 void csv_dump(CSV* csv);
 
 // FOR TESTING -> LSP BREAKS
@@ -222,19 +224,22 @@ void remove_row(CSV* csv, size_t line)
 {
     // Check out of bounds.
     assert(line < csv->num_lines);
-    
+    assert(line >= 0);
     
     // last element
     bool last_element = line == csv->num_lines - 1;
+
+    char** row_to_remove = csv->lines[line];
 
     // dont need to move memory, if it is last element, just free.
     if (!last_element) {
         memmove(csv->lines + line, csv->lines + line + 1, sizeof(char**) * (csv->num_lines - line));
     }
 
-    for (size_t i = 0; i < csv->num_fields; i++)
-        free(csv->lines[line][i]);
-    free(csv->lines[line]);
+    // Remove last element
+     for (size_t i = 0; i < csv->num_fields; i++)
+         free(row_to_remove[i]);
+     free(row_to_remove);
 
     csv->num_lines--;
 }
@@ -260,6 +265,45 @@ void csv_dump(CSV* csv)
     }
 
     printf("num lines is %zu\n", csv->num_lines);
+}
+
+// Includes commas, newlines, and null byte
+size_t num_bytes_with_delim(CSV* csv)
+{
+    size_t total_size = 0;
+
+    // get field names length
+    for (size_t i = 0; i < csv->num_fields; i++) {
+        size_t current_size = strlen(csv->field_name[i]);
+        ++current_size; // Include delim or \n
+        total_size += current_size; //append to total_size
+    }
+    
+    for (size_t i = 0; i < csv->num_lines; i++) {
+        for (size_t j = 0; j < csv->num_fields; j++) {
+            size_t current_size = strlen(csv->lines[i][j]);
+            ++current_size; // include delim, or \n, or \0
+            total_size += current_size; //append to total_size
+        }
+    }
+    return total_size;
+}
+
+char* csv_print(CSV* csv)
+{
+    return "";
+}
+
+void write_csv(CSV* csv, const char* file_name)
+{
+    FILE* output_file = fopen(file_name, "w");
+    assert(output_file);
+
+    char* csv_string = csv_print(csv);
+    fputs(csv_string, output_file);
+
+    fclose(output_file);
+    free(csv_string);
 }
 
 #endif // CSV_PARSER_IMPLEMENTATION

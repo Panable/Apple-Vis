@@ -37,12 +37,10 @@ cJSON* open_json(const char* file_name)
     return json;
 }
 
-int main(void) {
+void process_world_map(void)
+{
     CSV* csv = ParseCSV("fruit_consumption_all_countries.csv");
-    int line_number = search_field(csv, "Australia", "country_name");
-    char* field = get_field(csv, line_number, "percentage");
-    printf("the line number of australia is %s\n", field);
-    printf("zeroth element is %s\n", csv->lines[37][1]);
+    csv_dump(csv);
 
     cJSON* json = open_json("../countries-110m.json");
     cJSON* objects = get_obj(json, "objects");
@@ -73,10 +71,19 @@ int main(void) {
         }
     }
 
-    write_json(json, "../modified_countries.json");
 
+    write_json(json, "../modified_countries.json");
 
     csv_free(csv);
     cJSON_Delete(json);
+}
+
+int main(void)
+{
+    CSV* csv = ParseCSV("fruit_to_obesity_rate.csv");
+    printf("num bytes is %zu\n", num_bytes_with_delim(csv));
+    csv_dump(csv);
+
+    //csv_free(csv);
     return 0;
 }
