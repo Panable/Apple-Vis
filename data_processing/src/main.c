@@ -82,8 +82,9 @@ int main(void)
 {
     CSV* csv = ParseCSV("fruit_to_obesity_rate.csv");
     printf("num bytes is %zu\n", num_bytes_with_delim(csv));
-    csv_dump(csv);
+    
+    write_csv(csv, "test.csv");
 
-    //csv_free(csv);
+    //printf("%s", csv_print(csv));
     return 0;
 }

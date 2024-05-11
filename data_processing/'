@@ -299,27 +299,11 @@ char* csv_print(CSV* csv)
     char* printed = malloc(sizeof(char) * length);
     char* printed_offset = printed;
 
-
-    // print fields
     for (size_t i = 0; i < csv->num_fields; i++) {
-        printed_offset = stpcpy(printed_offset, csv->field_name[i]);
-        
-        // last
-        if (i == csv->num_fields - 1)
-            printed_offset = stpcpy(printed_offset, "\n");
-        else
-            printed_offset = stpcpy(printed_offset, ",");
     }
+    //stpcpy
 
-    for (size_t i = 0; i < csv->num_lines; i++) {
-        for (size_t j = 0; j < csv->num_fields; j++) {
-            printed_offset = stpcpy(printed_offset, csv->lines[i][j]);
-            if (j < csv->num_fields - 1)
-                printed_offset = stpcpy(printed_offset, ",");
-        }
-        if (i < csv->num_lines - 1)
-                printed_offset = stpcpy(printed_offset, "\n");
-    }
+    printed_offset = stpcpy(printed_offset, "hello");
 
     return printed;
 }
