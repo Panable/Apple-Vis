@@ -40,6 +40,7 @@ let color = d3.scaleQuantize()
 
         g.selectAll('path').data(countries.features).enter().append('path').attr('class', 'country').attr('d',path)
             .style("fill", function (d) {
+                console.log(d.properties.name);
                 let value = d.properties.fruit_consumption;
                 if (value) {
                     if (d.properties.name == "Mongolia") {

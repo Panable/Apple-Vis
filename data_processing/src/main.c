@@ -329,9 +329,9 @@ void test_json_formatting()
 
 int main(void)
 {
-    CSV* fruit_consumption_csv = parse_csv("fruit-consumption-per-capita-who.csv");
-    cJSON* fc = intermediary_fruit_consumption(fruit_consumption_csv);
-    write_json(fc, "fruit_consumption.json");
+    // CSV* fruit_consumption_csv = parse_csv("fruit-consumption-per-capita-who.csv");
+    // cJSON* fc = intermediary_fruit_consumption(fruit_consumption_csv);
+    // write_json(fc, "fruit_consumption.json");
 
     process_world_map();
 
