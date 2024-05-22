@@ -37,45 +37,59 @@ cJSON* open_json(const char* file_name)
     return json;
 }
 
+cJSON* search_json(cJSON* json, const char* name)
+{
+    assert(cJSON_IsArray(json));
+    cJSON* country = NULL;
+    cJSON_ArrayForEach(country, json)
+    {
+        cJSON* country_name = get_obj(country, "name");
+        char* val = cJSON_GetStringValue(country_name);
+
+        if (strcmp(val, name) == 0) return get_obj(country, "fruit_consumption");
+    }
+    return NULL;
+}
+
 void process_world_map(void)
 {
-    CSV* csv = parse_csv("fruit_consumption_all_countries.csv");
-    csv_dump(csv);
+    cJSON* fruit_consumption = open_json("fruit_consumption.json");
+    cJSON* world_map = open_json("../countries-50m.json");
 
-    cJSON* json = open_json("../countries-110m.json");
-    cJSON* objects = get_obj(json, "objects");
+    cJSON* test = search_json(fruit_consumption, "Australia");
+
+    cJSON* objects = get_obj(world_map, "objects");
     cJSON* countries = get_obj(objects, "countries");
     cJSON* geometries = get_obj(countries, "geometries");
     //cJSON* properties  = get_obj(geometries, "properties");
     
     // Iterate over geometries array
     cJSON* geometry = NULL;
-    cJSON_ArrayForEach(geometry, geometries) {
+    cJSON_ArrayForEach(geometry, geometries)
+    {
         cJSON* properties = get_obj(geometry, "properties");
-        if (properties) {
+        if (properties)
+        {
             cJSON* name = get_obj(properties, "name");
             // cJSON_AddStringToObject(properties, "hello", "bing");
             if (name && cJSON_IsString(name)) {
-                printf("Name: %s\n", name->valuestring);
-                int line_number = search_field(csv, name->valuestring, "country_name");
-                //found name! let's import our percentage~!
-                if (line_number != -1) {
-                    printf("Found %s and %s\n", name->valuestring, get_field(csv, line_number, "country_name"));
-                    char* percentage_as_str = get_field(csv, line_number, "percentage");
-                    double percentage = atof(percentage_as_str);
-                    cJSON_AddNumberToObject(properties, "percentage", percentage);
+                cJSON* fruit_consumption_data = search_json(fruit_consumption, name->valuestring);
+                if (fruit_consumption_data) {
+                    cJSON_AddItemToObject(properties, "fruit_consumption", fruit_consumption_data);
+                    printf("BINDING\n");
                 }
-            } else {
+            } 
+            else
+            {
                 printf("Name not found or not a string\n");
             }
         }
     }
 
 
-    write_json(json, "../modified_countries.json");
+    write_json(world_map, "../modified_countries3.json");
 
-    csv_free(csv);
-    cJSON_Delete(json);
+    cJSON_Delete(world_map);
 }
 
 int find_matching_method(CSV* csv, const char* country, size_t cur_index)
@@ -206,7 +220,6 @@ cJSON* fruit_obs_to_json(CSV* csv)
         char* cur_year = csv->lines[i][year];
         char* cur_method = csv->lines[i][method];
         
-
         // find existing country.
         cJSON* country = find_country(countries, cur_country);
         
@@ -260,7 +273,6 @@ cJSON* intermediary_fruit_consumption(CSV* csv)
         char* cur_country_code = csv->lines[i][country_code];
         char* cur_year  = csv->lines[i][year];
         char* cur_value = csv->lines[i][value];
-
 
         cJSON* country = find_country(countries, cur_country);
         cJSON* data = NULL;
@@ -320,6 +332,8 @@ int main(void)
     CSV* fruit_consumption_csv = parse_csv("fruit-consumption-per-capita-who.csv");
     cJSON* fc = intermediary_fruit_consumption(fruit_consumption_csv);
     write_json(fc, "fruit_consumption.json");
+
+    process_world_map();
 
     return 0;
     CSV* csv = clean_fruit_to_obesity_rate();
