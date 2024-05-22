@@ -3,6 +3,9 @@
 
 extern char* strdup(const char*);
 extern char *stpcpy(char *restrict dst, const char *restrict src);
+
+extern char *strtok_r(char *restrict str, const char *restrict delim,
+                      char **restrict saveptr);
 #include <stdlib.h>
 #include <stdio.h>
 #include <assert.h>
@@ -34,11 +37,37 @@ void write_csv(CSV* csv, const char* file_name);
 char* csv_print(CSV* csv);
 void csv_dump(CSV* csv);
 
-// FOR TESTING -> LSP BREAKS
 #define CSV_PARSER_IMPLEMENTATION
 
 // IMPLEMENTATIONS
 #ifdef CSV_PARSER_IMPLEMENTATION
+
+char* better_strtok(char* str, const char* del)
+{
+    static char* src = NULL;
+    char* cur = NULL;
+    char* ret = NULL;
+
+    if (str)
+    {
+        src = str;
+        ret = src;
+    }
+    if (!src)
+        return NULL;
+    cur = strpbrk(src, del);
+    if (cur)
+    {
+        *cur = 0;    // set the current location to null terminator char
+        ret = src;   // set the return value to the string
+        src = ++cur; // increment the string.
+    }
+    else
+    {
+        src = NULL;
+    }
+    return ret;
+}
 
 char* file_to_buffer(const char* file_name)
 {
@@ -101,15 +130,21 @@ void csv_free(CSV* csv)
 
 void populate_fields(char* line, size_t line_index, CSV* csv)
 {
-    const char* tok;
-    
     size_t element = 0;
-    for (tok = strtok(line, ","); tok && *tok; tok = strtok(NULL, ",\n")) {
-        assert(line_index < csv->num_lines);
+    assert(line_index < csv->num_lines);
+    for (char* tok = better_strtok(line, ",\n"); tok; tok = better_strtok(NULL, "\n,")) {
         assert(element < csv->num_fields);
         csv->lines[line_index][element] = strdup(tok);
         element++;
     }
+
+//     size_t element = 0;
+//     for (tok = strtok(line, ","); tok && *tok; tok = strtok(NULL, ",\n")) {
+//         assert(line_index < csv->num_lines);
+//         assert(element < csv->num_fields);
+//         csv->lines[line_index][element] = strdup(tok);
+//         element++;
+//     }
 }
 
 void populate_field_names(const char* line, CSV* csv)

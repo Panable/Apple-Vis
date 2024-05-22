@@ -244,8 +244,84 @@ cJSON* fruit_obs_to_json(CSV* csv)
     return countries;
 }
 
+cJSON* intermediary_fruit_consumption(CSV* csv)
+{
+    cJSON* countries = cJSON_CreateArray();
+
+    size_t country = get_column_index(csv, "Entity");
+    size_t country_code = get_column_index(csv, "Code");
+    size_t year = get_column_index(csv, "Year");
+    size_t value = get_column_index(csv, "Fruit");
+
+    for (size_t i = 0; i < csv->num_lines; i++) {
+
+        // Values in CSV
+        char* cur_country = csv->lines[i][country];
+        char* cur_country_code = csv->lines[i][country_code];
+        char* cur_year  = csv->lines[i][year];
+        char* cur_value = csv->lines[i][value];
+
+
+        cJSON* country = find_country(countries, cur_country);
+        cJSON* data = NULL;
+        
+        // not found -> create a new country
+        if (!country) {
+            // Create country
+            country = cJSON_CreateObject();
+            cJSON_AddStringToObject(country, "name", cur_country);
+            cJSON_AddItemToArray(countries, country);
+
+            // Create data array
+
+            data = cJSON_CreateArray();
+            cJSON_AddItemToObject(country, "fruit_consumption", data);
+        } else {
+            data = get_obj(country, "fruit_consumption");
+        }
+
+        assert(data);
+
+        // Bind data values
+        
+        char* eptr;
+        assert(cur_value);
+        double val = strtod(cur_value, &eptr);
+
+        cJSON* cur_data = cJSON_CreateObject();
+
+        cJSON_AddNumberToObject(cur_data, "year", atof(cur_year));
+        cJSON_AddNumberToObject(cur_data, "value", val);
+
+        cJSON_AddItemToArray(data, cur_data);
+
+    }
+    printf("%s\n", cJSON_Print(countries));
+    return countries;
+}
+
+void test_json_formatting()
+{
+    cJSON* json = open_json("format.json");
+    printf("%s\n", cJSON_Print(json));
+    printf("-----------------------------------------\n");
+
+    assert(cJSON_IsArray(json));
+
+    cJSON* country = NULL;
+    cJSON_ArrayForEach(country, json) {
+        cJSON* country_name = get_obj(country, "country_name");
+        printf("%s\n", cJSON_Print(country_name));
+    }
+}
+
 int main(void)
 {
+    CSV* fruit_consumption_csv = parse_csv("fruit-consumption-per-capita-who.csv");
+    cJSON* fc = intermediary_fruit_consumption(fruit_consumption_csv);
+    write_json(fc, "fruit_consumption.json");
+
+    return 0;
     CSV* csv = clean_fruit_to_obesity_rate();
     //csv_dump(csv);
     cJSON* json = fruit_obs_to_json(csv);
