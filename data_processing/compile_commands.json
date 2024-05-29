@@ -8,12 +8,31 @@
       "-std=c11",
       "-pedantic",
       "-ggdb",
+      "-DPL_LOGGING",
       "-o",
       "build/process",
       "src/main.c"
     ],
     "directory": "/home/thepanable/Homework/Apple-Vis/data_processing",
     "file": "/home/thepanable/Homework/Apple-Vis/data_processing/src/main.c",
+    "output": "/home/thepanable/Homework/Apple-Vis/data_processing/build/process"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-c",
+      "-Wall",
+      "-Wextra",
+      "-std=c11",
+      "-pedantic",
+      "-ggdb",
+      "-DPL_LOGGING",
+      "-o",
+      "build/process",
+      "src/pl_utils.c"
+    ],
+    "directory": "/home/thepanable/Homework/Apple-Vis/data_processing",
+    "file": "/home/thepanable/Homework/Apple-Vis/data_processing/src/pl_utils.c",
     "output": "/home/thepanable/Homework/Apple-Vis/data_processing/build/process"
   }
 ]

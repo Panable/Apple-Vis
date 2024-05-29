@@ -5,7 +5,7 @@ set -xe
 CC=cc
 LIBS="-lc -lncurses -lcjson"
 CFLAGS="-Wall -Wextra -std=c11 -pedantic -ggdb"
+SRC="src/main.c src/pl_utils.c"
+MACROS="-DPL_LOGGING"
 
-SRC="src/main.c"
-
-bear -- $CC $CFLAGS -o build/process $SRC $LIBS
+bear -- $CC $CFLAGS $MACROS -o build/process $SRC $LIBS

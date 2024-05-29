@@ -11,6 +11,7 @@ extern char *strtok_r(char *restrict str, const char *restrict delim,
 #include <assert.h>
 #include <string.h>
 #include <stdbool.h>
+#include "pl_utils.h"
 
 // DECLARATIONS
 typedef struct CSV {
@@ -169,13 +170,11 @@ void populate_field_names(const char* line, CSV* csv)
 
     csv->num_fields = num_fields;
     csv->field_name = malloc(sizeof(char*) * csv->num_fields);
-    //printf("\nnum fields is %zu, longest token length is %zu\n", num_fields, longest_field_name);
 
     copy = strdup(line);
     // initialize fields in CSV
     size_t i = 0;
     for (tok = strtok(copy, ","); tok && *tok; tok = strtok(NULL, ",\n")) {
-        //printf("%s\n", tok);
         char* field = strdup(tok);
         csv->field_name[i] = field;
         i++;
@@ -196,8 +195,9 @@ CSV* parse_csv(const char* file_name)
     size_t longest_line_length;
 
     count_lines_in_file(file_name, &num_lines, &longest_line_length);
-    printf("number of lines is: %zu, longest line is %zu in total csv\n",
-            num_lines, longest_line_length);
+    // PL_LOG(PL_INFO, "number of lines is: %zu, longest line is %zu in total csv", num_lines, longest_line_length);
+    // printf("number of lines is: %zu, longest line is %zu in total csv\n",
+    //         num_lines, longest_line_length);
 
     FILE* stream = fopen(file_name, "r");
     char line[++longest_line_length];
@@ -215,6 +215,7 @@ CSV* parse_csv(const char* file_name)
             line_index++;
         }
     }
+    PL_LOG(PL_INFO, "Successfully parsed CSV: %s", file_name);
     return csv;
 }
 
