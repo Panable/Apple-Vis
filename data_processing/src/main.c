@@ -54,14 +54,13 @@ cJSON* search_json(cJSON* json, const char* name)
 void process_world_map(const char* name)
 {
     cJSON* fruit_consumption = open_json(name);
-    cJSON* world_map = open_json("../countries-50m.json");
+    cJSON* world_map = open_json("datasets/countries-50m.json");
 
     cJSON* test = search_json(fruit_consumption, "Australia");
 
     cJSON* objects = get_obj(world_map, "objects");
     cJSON* countries = get_obj(objects, "countries");
     cJSON* geometries = get_obj(countries, "geometries");
-    //cJSON* properties  = get_obj(geometries, "properties");
     
     // Iterate over geometries array
     cJSON* geometry = NULL;
@@ -87,7 +86,7 @@ void process_world_map(const char* name)
     }
 
 
-    write_json(world_map, "../modified_countries3.json");
+    write_json(world_map, "processed_data/world_map.json");
 
     cJSON_Delete(world_map);
 }
@@ -406,9 +405,23 @@ void generate_intermediary_all(void)
 
 int main(void)
 {
-    cJSON* json = open_json("data_all.json");
-    cJSON* fruit_to_obese = exist_all(json, "fruit_consumption", "overweight");
-    //write_json(fruit_to_obese, "fruit_to_obese.json");
+    CSV* fruit_consumption_csv = parse_csv("datasets/fruit-consumption-per-capita-who.csv");
+    cJSON* intermediary = general_intermediary_json(cJSON_CreateArray(), fruit_consumption_csv, "fruit_consumption", true);
+
+    CSV* overweight_csv = parse_csv("datasets/share-of-adults-who-are-overweight.csv");
+    general_intermediary_json(intermediary, overweight_csv, "overweight", false);
+
+    write_json(intermediary, "processed_data/data_all.json");
+    process_world_map("processed_data/data_all.json");
     return 0;
-    //process_world_map("data_all.json");
+    //return 0;
 }
+
+// int main(void)
+// {
+//     cJSON* json = open_json("data_all.json");
+//     cJSON* fruit_to_obese = exist_all(json, "fruit_consumption", "overweight");
+//     //write_json(fruit_to_obese, "fruit_to_obese.json");
+//     return 0;
+//     //process_world_map("data_all.json");
+// }

@@ -31,7 +31,7 @@ function init()
 let color = d3.scaleQuantize()
               .range(color_pallete);
 
-    d3.json("modified_countries3.json").then(data => {
+    d3.json("data_processing/processed_data/world_map.json").then(data => {
         console.log(data.objects.countries);
         const countries = topojson.feature(data, data.objects.countries);
         color.domain([
