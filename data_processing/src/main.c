@@ -51,9 +51,9 @@ cJSON* search_json(cJSON* json, const char* name)
     return NULL;
 }
 
-void process_world_map(void)
+void process_world_map(const char* name)
 {
-    cJSON* fruit_consumption = open_json("fruit_consumption.json");
+    cJSON* fruit_consumption = open_json(name);
     cJSON* world_map = open_json("../countries-50m.json");
 
     cJSON* test = search_json(fruit_consumption, "Australia");
@@ -257,6 +257,57 @@ cJSON* fruit_obs_to_json(CSV* csv)
     return countries;
 }
 
+cJSON* general_intermediary_json(cJSON* json, CSV* csv, const char* name, bool gen_new)
+{
+    size_t country_i = get_column_index(csv, "Entity");
+    size_t year_i = get_column_index(csv, "Year");
+    size_t value_i = get_column_index(csv, "Value");
+
+    for (size_t i = 0; i < csv->num_lines; i++)
+    {
+        char* cur_country = csv->lines[i][country_i];
+        char* cur_year  = csv->lines[i][year_i];
+        char* cur_value = csv->lines[i][value_i];
+
+        cJSON* country = find_country(json, cur_country);
+        cJSON* data = get_obj(country, name);
+
+        if (!country && !gen_new) continue;
+        
+        if (!country && gen_new)
+        {
+            // Create country
+            country = cJSON_CreateObject();
+            cJSON_AddStringToObject(country, "name", cur_country);
+            cJSON_AddItemToArray(json, country);
+
+        }
+        if (country && !data)
+        {
+            // Create data array
+            data = cJSON_CreateArray();
+            cJSON_AddItemToObject(country, name, data);
+        }
+
+        assert(data);
+
+        // Bind data values
+        
+        char* eptr;
+        assert(cur_value);
+        double val = strtod(cur_value, &eptr);
+
+        cJSON* cur_data = cJSON_CreateObject();
+
+        cJSON_AddNumberToObject(cur_data, "year", atof(cur_year));
+        cJSON_AddNumberToObject(cur_data, "value", val);
+
+        cJSON_AddItemToArray(data, cur_data);
+
+    }
+    return json;
+}
+
 cJSON* intermediary_fruit_consumption(CSV* csv)
 {
     cJSON* countries = cJSON_CreateArray();
@@ -264,7 +315,7 @@ cJSON* intermediary_fruit_consumption(CSV* csv)
     size_t country = get_column_index(csv, "Entity");
     size_t country_code = get_column_index(csv, "Code");
     size_t year = get_column_index(csv, "Year");
-    size_t value = get_column_index(csv, "Fruit");
+    size_t value = get_column_index(csv, "Value");
 
     for (size_t i = 0; i < csv->num_lines; i++) {
 
@@ -327,41 +378,37 @@ void test_json_formatting()
     }
 }
 
+// get rid of the data that doesn't have all the corresponding.
+cJSON* exist_all(cJSON* json, const char* name1, const char* name2)
+{
+    cJSON* country = NULL;
+    cJSON_ArrayForEach(country, json) {
+        bool keep = true;
+        if(!get_obj(country, name1))
+            keep = false;
+        if(!get_obj(country, name2))
+            keep = false;
+
+        if (!keep && country)
+            cJSON_Delete(country);
+    }
+    return json;
+}
+
+void generate_intermediary_all(void)
+{
+    CSV* fruit_consumption_csv = parse_csv("fruit-consumption-per-capita-who.csv");
+    cJSON* intermediary = general_intermediary_json(cJSON_CreateArray(), fruit_consumption_csv, "fruit_consumption", true);
+    CSV* overweight_csv = parse_csv("share-of-adults-who-are-overweight.csv");
+    general_intermediary_json(intermediary, overweight_csv, "overweight", false);
+    write_json(intermediary, "data_all.json");
+}
+
 int main(void)
 {
-    // CSV* fruit_consumption_csv = parse_csv("fruit-consumption-per-capita-who.csv");
-    // cJSON* fc = intermediary_fruit_consumption(fruit_consumption_csv);
-    // write_json(fc, "fruit_consumption.json");
-
-    process_world_map();
-
+    cJSON* json = open_json("data_all.json");
+    cJSON* fruit_to_obese = exist_all(json, "fruit_consumption", "overweight");
+    //write_json(fruit_to_obese, "fruit_to_obese.json");
     return 0;
-    CSV* csv = clean_fruit_to_obesity_rate();
-    //csv_dump(csv);
-    cJSON* json = fruit_obs_to_json(csv);
-    //printf("%s\n", cJSON_Print(json));
-    write_json(json, "test.json");
-    return 0;
-
-    cJSON* countries = cJSON_CreateArray();
-    cJSON* country = cJSON_CreateObject();
-
-    cJSON* name = cJSON_CreateString("Australia");
-    cJSON* fruit_consumption = cJSON_CreateObject();
-    cJSON_AddNumberToObject(fruit_consumption, "percentage", 99.99);
-    cJSON_AddNumberToObject(fruit_consumption, "year", 2003);
-    cJSON* overweight_obese = cJSON_CreateObject();
-    cJSON_AddNumberToObject(overweight_obese, "percentage", 69.99);
-    cJSON_AddNumberToObject(overweight_obese, "year", 2033);
-    cJSON_AddStringToObject(overweight_obese, "measurement_method", "Survey");
-
-    cJSON_AddItemToObject(country, "name", name);
-    cJSON_AddItemToObject(country, "fruit_consumption", fruit_consumption);
-    cJSON_AddItemToObject(country, "overweight_obese", overweight_obese);
-
-    cJSON_AddItemToArray(countries, country);
-
-    printf("%s\n", cJSON_Print(countries));
-    csv_free(csv);
-    return 0;
+    //process_world_map("data_all.json");
 }
