@@ -1,6 +1,8 @@
 const MAX_COUNTRIES = 5; // Maximum number of countries to select
 
-d3.json('fruit_to_obesity.json').then(data => { // Read data from JSON file
+let data_file_path = '../data_processing/processed_data/fruit_to_obese.json';
+
+d3.json(data_file_path).then(data => { // Read data from JSON file
     const countries = data.map(d => d.name); // Extract country names
 
     // Initialize select2 dropdown
@@ -27,8 +29,8 @@ function plotStackedBarChart(selectedCountries, data) { // Plot stacked bar char
 
     const formattedData = filteredData.map(d => ({ // Format data for stacked bar chart
         Country: d.name,
-        'Fruit Consumption (%)': d.fruit_consumption.percentage, // Fruit consumption percentage
-        'Overweight or Obese (%)': d.overweight_or_obese.percentage
+        'Fruit Consumption (%)': d.fruit_consumption[d.fruit_consumption.length - 1].value, // Fruit consumption percentage
+        'Overweight or Obese (%)': d.overweight[d.overweight.length - 1].value
     }));
 
     // Clear any previous chart
