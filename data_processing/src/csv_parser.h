@@ -261,7 +261,6 @@ void remove_row(CSV* csv, size_t line)
 {
     // Check out of bounds.
     assert(line < csv->num_lines);
-    assert(line >= 0);
     
     // last element
     bool last_element = line == csv->num_lines - 1;

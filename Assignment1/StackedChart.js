@@ -29,7 +29,7 @@ function plotStackedBarChart(selectedCountries, data) { // Plot stacked bar char
 
     const formattedData = filteredData.map(d => ({ // Format data for stacked bar chart
         Country: d.name,
-        'Fruit Consumption (%)': d.fruit_consumption[d.fruit_consumption.length - 1].value, // Fruit consumption percentage
+        'Fruit Consumption (%)': d.fruit_consumption[d.fruit_consumption.length - 1].value / 5, // Fruit consumption percentage
         'Overweight or Obese (%)': d.overweight[d.overweight.length - 1].value
     }));
 

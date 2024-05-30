@@ -18,16 +18,18 @@ function init()
 
     const g = svg.append('g').attr('clip-path', 'url(#clip)'); // Apply the clip path to the group element
 
-    let color_pallete = [
-        "#003f5c",
-        "#2f4b7c",
-        "#665191",
-        "#a05195",
-        "#d45087",
-        "#f95d6a",
-        "#ff7c43",
-        "#ffa600",
-    ];
+    // let color_pallete = [
+    //     "#003f5c",
+    //     "#2f4b7c",
+    //     "#665191",
+    //     "#a05195",
+    //     "#d45087",
+    //     "#f95d6a",
+    //     "#ff7c43",
+    //     "#ffa600",
+    // ];
+
+let color_pallete = ['#ffffcc','#ffeda0','#fed976','#feb24c','#fd8d3c','#fc4e2a','#e31a1c','#bd0026','#800026'];
 let color = d3.scaleQuantize()
               .range(color_pallete);
 
@@ -35,7 +37,7 @@ let color = d3.scaleQuantize()
         console.log(data.objects.countries);
         const countries = topojson.feature(data, data.objects.countries);
         color.domain([
-            10, 150
+            1, 500
             ]);
 
         g.selectAll('path').data(countries.features).enter().append('path').attr('class', 'country').attr('d',path)

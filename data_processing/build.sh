@@ -1,6 +1,6 @@
 #!/bin/sh
 
-set -xe
+set -e
 
 CC=cc
 LIBS="-lc -lncurses -lcjson"
