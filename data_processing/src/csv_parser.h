@@ -372,4 +372,3 @@ void write_csv(CSV* csv, const char* file_name)
 }
 
 #endif // CSV_PARSER_IMPLEMENTATION
-

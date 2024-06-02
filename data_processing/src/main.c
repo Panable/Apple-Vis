@@ -156,8 +156,8 @@ cJSON* general_intermediary_json(cJSON* json, CSV* csv, const char* name, bool g
     for (size_t i = 0; i < csv->num_lines; i++)
     {
         char* cur_country = csv->lines[i][country_i];
-        char* cur_year  = csv->lines[i][year_i];
-        char* cur_value = csv->lines[i][value_i];
+        char* cur_year    = csv->lines[i][year_i];
+        char* cur_value   = csv->lines[i][value_i];
 
         cJSON* country = find_country(json, cur_country);
         cJSON* data = get_obj(country, name);
@@ -386,7 +386,6 @@ int main(void)
     /* Generate specific data for graphs */
     cJSON* fruit_to_obese = exist_all(intermediary, 2, "fruit_consumption", "overweight");
     write_json(fruit_to_obese, "processed_data/fruit_to_obese.json");
-
 
     cJSON_Delete(data_all_full);
     cJSON_Delete(intermediary);

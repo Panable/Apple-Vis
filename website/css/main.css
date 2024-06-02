@@ -1,45 +1,65 @@
-html, body {
-    height: 100%;
+html,
+body {
+	height: 100%;
 }
 
 body {
-    display: table;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    background: #181818;
-    color: #e4e4ef;
+	display: table;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	background: #181818;
+	color: #e4e4ef;
 }
 
 a {
-    font-kerning: normal;
-    font-family: 'Cantarell', sans-serif;
-    font-size: 25px;
-    color: #73c936;
-    text-decoration: none;
+	font-kerning: normal;
+	font-family: 'Cantarell', sans-serif;
+	font-size: 25px;
+	color: #73c936;
+	text-decoration: none;
 }
 
 h1 {
-    font-family: 'Cantarell', sans-serif;
-    font-size: 50px;
-    margin-bottom: 15px;
+	font-family: 'Cantarell', sans-serif;
+	font-size: 50px;
+	margin-bottom: 15px;
 }
 
 h2 {
-    font-family: 'Cantarell', sans-serif;
-    font-size: 30px;
-    margin-bottom: 10px;
+	font-family: 'Cantarell', sans-serif;
+	font-size: 30px;
+	margin-bottom: 10px;
 }
 
 .white {
-    color: #e4e4ef;
+	color: #e4e4ef;
 }
 
 .green {
-	color:#73c936; 
+	color: #73c936;
 }
 
 .country {
-    fill: #ccc;
-    stroke: #999;
+	fill: #ccc;
+	stroke: #999;
+	stroke-width: 0.1px;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 11px;
+	font-weight: 300;
+	fill: #242424;
+	text-align: center;
+	cursor: default;
+}
+
+.legend {
+	font-family: 'Raleway', sans-serif;
+	fill: white;
+}
+
+.tooltip {
+	fill: white;
 }
