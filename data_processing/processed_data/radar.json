@@ -1,0 +1,5875 @@
+[{
+		"name":	"Afghanistan",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	33.01,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	23,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	1.104041,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	76.24,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	10.9,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Albania",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	206.81,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	57.7,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.697463,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	368.96,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	10.2,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Algeria",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	105.98001,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	62,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.96301794,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	204.85002,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	7.1,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Angola",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	69.859985,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	27.5,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.6573732,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	21.329996,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	4.6,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Antigua and Barbuda",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	180.74255,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	48,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.6930168,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	36.406487,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	11.7,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Argentina",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	76.62999,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	62.7,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.520969,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	73.329994,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	5.4,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Armenia",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	112.27996,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	54.4,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.9714446,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	213.45993,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	5.6,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Australia",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	87.44998,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	64.5,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.721461,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	163.22997,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	6.4,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Austria",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	127.389915,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	54.3,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.6541914,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	165.80989,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	4.6,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Azerbaijan",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	89.43999,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	53.6,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	1.2238872,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	198.19997,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	5.6,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Bahamas",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	203.31502,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	64.4,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.71783084,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	143.83647,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	8.8,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Bahrain",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	128.41035,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	65.8,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.94675905,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	176.19049,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	11.3,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Bangladesh",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	34.690002,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	20,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.71372896,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	46.080006,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	14.2,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Barbados",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	97.04863,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	52.4,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.7274171,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	81.268845,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	14,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Belarus",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	74.61999,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	59.4,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	1.0184691,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	159.82997,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	5.6,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Belgium",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	124.70004,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	59.5,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.54654944,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	237.93007,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	3.6,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Belize",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	58.048985,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	54.8,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.7363605,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	75.61868,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	14.5,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Benin",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	40.46,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	29.5,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.6015865,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	81.59999,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	1.1,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Bhutan",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	26.489658,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	27.1,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.69846743,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	63.479183,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	10.4,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Bolivia",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	86.68997,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	56.1,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.37485045,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	42.469986,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	5.5,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Bosnia and Herzegovina",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	113.67972,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	53.3,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.7963218,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	269.54932,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	9.1,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Botswana",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	54.079918,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	43.4,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.67452925,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	59.609905,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	5.2,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Brazil",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	96.85,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	56.5,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.47486863,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	49.55,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	8.8,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Brunei",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	93.91672,
+				"year":	2009,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	41.2,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.5635666,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	64.15893,
+				"year":	2009,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	11.1,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Bulgaria",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	76.270065,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	61.7,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.84014034,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	98.84009,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	7.4,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Burkina Faso",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	54.129974,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	23.2,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.5483184,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	53.999973,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	2.1,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Burundi",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	78.20997,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	22.2,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.60990024,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	36.419983,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	6.5,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Cambodia",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	13.839991,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	21.7,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.61156654,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	35.989975,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	7.3,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Cameroon",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	111.95999,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	33.6,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.592294,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	103.619995,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	5.5,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Canada",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	130.13,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	64.1,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.6274284,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	126.15,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	7.7,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Cape Verde",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	49.748646,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	34.8,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.5583032,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	98.55731,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	2.1,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Central African Republic",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	45.789875,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	26.2,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.71370906,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	17.80995,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	5.8,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Chad",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	7.1199985,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	23.1,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.5970363,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	5.8199987,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	5.8,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Chile",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	80.93002,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	63.1,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.5028141,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	77.71002,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	10.8,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"China",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	109.19,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	32.3,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.65221304,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	399.03,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	10.6,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Colombia",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	142.9,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	59,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.42534888,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	50.27,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	8.3,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Comoros",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	100.68976,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	27.1,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.6047802,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	44.919888,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	11.7,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Congo",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	44.65997,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	30.9,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.6892413,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	15.12999,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	5.5,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Costa Rica",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	56.51001,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	61.6,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.48465884,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	87.67001,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	8.8,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Cote d'Ivoire",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	78.65,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	31.6,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.6403883,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	35.66,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	2.1,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Croatia",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	87.11002,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	59.6,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.6743465,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	332.93005,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	4.8,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Cuba",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	110.43997,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	58.5,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.65062517,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	121.84997,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	7.6,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Cyprus",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	85.42979,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	59.1,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.49842006,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	115.90972,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	8.6,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Czechia",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	93.26002,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	62.3,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.7917384,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	127.92002,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	7.1,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Democratic Republic of Congo",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	59.29,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	25.3,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.6256446,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	6.99,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	5.8,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Denmark",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	119.16988,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	55.4,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.6088401,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	171.27983,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	5.3,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Djibouti",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	36.709934,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	38.6,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.6139951,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	117.359795,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	7.4,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Dominica",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	440.16806,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	60.3,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.73050547,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	127.67593,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	11.7,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Dominican Republic",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	364.6599,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	61.2,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.73891026,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	97.53998,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	10.5,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"East Timor",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	18.869944,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	21.6,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.6620304,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	27.879913,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	8.6,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Ecuador",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	59.960014,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	56,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.37017298,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	23.000006,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	4.4,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Egypt",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	86.78,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	63.5,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	1.2053955,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	132.53,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	20.9,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"El Salvador",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	92.630066,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	59.9,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.46754697,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	97.58008,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	6.3,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Estonia",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	90.48972,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	55.8,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	1.0212457,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	150.62955,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	6.5,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Eswatini",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	82.09979,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	38.4,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.6834896,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	33.649918,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	4.6,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Ethiopia",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	11.130001,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	20.9,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.5004135,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	12.010001,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	5,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Fiji",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	51.18972,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	63.8,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.6949442,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	98.71947,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	17.7,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Finland",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	115.52017,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	57.9,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.6303537,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	109.660164,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	6.1,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"France",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	126.319984,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	59.5,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.49958777,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	120.19998,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	5.3,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Gabon",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	139.89969,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	40.2,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.6352821,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	51.28989,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	5.5,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Gambia",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	6.8299947,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	31.9,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.6620686,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	35.739975,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	1.9,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Georgia",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	55.56994,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	54.2,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	1.0085472,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	77.139915,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	5.7,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Germany",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	102.30998,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	56.8,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.60534644,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	200.97997,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	6.9,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Ghana",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	180.06998,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	32,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.65292454,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	42.41999,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	2.6,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Greece",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	128.5399,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	62.3,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.5586539,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	156.55988,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	6.4,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Grenada",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	164.04156,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	51.4,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.78178144,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	121.84631,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	12.6,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Guatemala",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	105.86998,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	55.9,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.47887328,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	60.53999,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	13.1,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Guinea",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	91.50001,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	26.6,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.5853059,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	46.880005,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	2.1,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Guinea-Bissau",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	50.81975,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	29.9,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.6749467,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	20.089903,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	2.1,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Guyana",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	307.47964,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	49.4,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.8418477,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	297.06964,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	11.7,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Haiti",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	98.20996,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	54.9,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.81244713,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	18.209991,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	8.9,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Honduras",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	53.32002,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	55.8,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.5190419,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	35.07001,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	5.1,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Hungary",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	88.43005,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	61.6,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.8167967,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	88.70005,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	7,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Iceland",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	142.81691,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	59.1,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.5559755,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	161.76651,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	5.5,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"India",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	63.46,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	19.7,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.76133895,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	90.75,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	9.6,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Indonesia",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	79.62,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	28.2,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.6351522,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	49.98,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	10.6,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Iran",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	140.33,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	61.6,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	1.1837064,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	90.88,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	9.1,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Iraq",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	52.68113,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	64.6,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	1.11232,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	94.19475,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	10.7,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Ireland",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	112.9501,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	60.6,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.55240977,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	185.39018,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	3,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Israel",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	113.94003,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	64.3,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.5096014,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	169.14005,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	8.5,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Italy",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	128.41998,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	58.5,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.7188139,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	136.32999,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	6.4,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Jamaica",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	160.14993,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	55.5,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.77006036,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	123.469955,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	11.1,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Japan",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	43.75,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	27.2,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.53809893,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	114.78,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	6.6,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Jordan",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	34.769978,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	69.6,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	1.0232253,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	138.2899,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	15.4,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Kazakhstan",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	62.79001,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	53.6,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.97337186,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	269.14005,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	6.6,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Kenya",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	64.42999,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	25.5,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.5797668,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	62.649994,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	4,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Kiribati",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	71.332794,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	78.7,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.83952755,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	47.825176,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	22.1,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Kuwait",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	107.089966,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	73.4,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.9572627,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	228.47993,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	24.9,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Kyrgyzstan",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	32.569992,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	48.3,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	1.0064639,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	176.90996,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	6.6,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Laos",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	119.39008,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	25.4,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.6670436,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	219.31015,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	6.2,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Latvia",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	65.499794,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	57.8,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.9099592,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	147.42952,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	5.9,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Lebanon",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	97.89007,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	67.9,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.9799665,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	142.4901,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	8,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Lesotho",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	21.36987,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	38.7,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.6843395,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	32.2098,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	4.6,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Liberia",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	38.689983,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	30.9,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.6241258,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	29.60999,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	2.1,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Libya",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	97.09,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	66.8,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.9765362,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	208.49,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	8.7,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Lithuania",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	65.29996,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	59.6,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.899507,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	116.73991,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	5.8,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Luxembourg",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	154.25758,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	58.7,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.522749,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	225.04648,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	5.9,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Madagascar",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	38.729996,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	23.9,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.6936,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	14.109999,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	4.6,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Malawi",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	161.77998,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	23.4,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.6141612,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	86.689995,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	7.3,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Malaysia",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	48.89,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	42.5,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.61911297,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	73.56,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	19,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Maldives",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	152.62738,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	30.6,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.52020043,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	170.20708,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	9.2,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Mali",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	87.64996,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	28.1,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.58754313,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	122.21995,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	2.1,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Malta",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	84.76984,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	66.4,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.5242307,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	176.69966,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	8,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Mauritania",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	23.309944,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	34.4,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.6030352,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	62.359856,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	2.1,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Mauritius",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	48.349552,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	32.3,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.5545087,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	118.14891,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	22.6,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Mexico",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	122.96001,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	64.9,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.4819368,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	54.330006,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	16.9,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Micronesia (country)",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	35.6759,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	75.9,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.7060246,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	41.47523,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	15.6,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Moldova",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	110.19942,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	51.8,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.9341371,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	83.40885,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	5.6,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Mongolia",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	32.75998,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	55.6,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	1.1500872,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	84.22996,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	6.9,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Montenegro",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	114.360725,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	59.4,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.82219696,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	161.97102,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	9.1,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Morocco",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	110.86997,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	60.4,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	1.0567133,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	99.26997,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	9.1,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Mozambique",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	29.049995,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	26.4,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.7123691,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	32.409996,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	3.3,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Myanmar",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	44.019993,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	24.8,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.59999627,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	82.789986,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	7.1,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Namibia",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	53.709995,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	40.6,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.62833226,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	38.93,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	6.7,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Nauru",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	92.4101,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	88.5,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.7216165,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	90.214134,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	23.4,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Nepal",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	56.360004,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	21,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.65509623,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	139.56001,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	8.7,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Netherlands",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	168.42003,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	57.8,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.6106899,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	169.82004,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	4.5,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"New Zealand",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	75.83,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	65.6,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.63550377,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	103.91,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	6.2,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Nicaragua",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	49.73996,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	58.2,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.50670165,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	37.279964,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	9.3,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Niger",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	21.579998,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	22,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.5814721,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	126.119995,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	5.2,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Nigeria",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	51.409996,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	28.9,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.56772697,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	66.729996,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	3.6,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"North Korea",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	59.6,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	32.4,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.715037,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	121.96,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	8.6,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"North Macedonia",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	105.28005,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	58.1,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.80666053,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	286.20016,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	6.1,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Norway",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	140.48997,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	58.3,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.62628525,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	166.79997,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	3.6,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Oman",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	187.56985,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	62.6,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	1.1160378,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	253.37979,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	13.8,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Pakistan",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	36.570004,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	28.4,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.9181785,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	33.88,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	30.8,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Panama",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	134.13019,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	58.8,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.48638907,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	53.950077,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	8.2,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Papua New Guinea",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	224.37006,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	52.9,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.68699545,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	52.52001,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	16.7,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Paraguay",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	85.30997,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	53.5,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.47322372,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	74.03998,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	7.5,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Peru",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	128.21002,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	57.5,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.32594123,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	59.47001,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	4.8,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Philippines",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	95.329994,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	27.6,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.6804993,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	58.129997,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	7.1,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Poland",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	63.18001,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	58.3,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.5268282,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	140.52003,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	6.8,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Portugal",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	161.53984,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	57.5,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.43510082,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	117.02989,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	9.1,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Qatar",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	114.070045,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	71.7,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.9053897,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	211.71008,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	19.5,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Romania",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	108.030014,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	57.7,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.7763833,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	168.62001,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	6.5,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Russia",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	80.26001,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	57.1,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.9869482,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	112.520004,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	5.6,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Rwanda",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	188.13998,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	25.1,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.5511799,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	46.999996,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	6.5,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Saint Kitts and Nevis",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	161.82861,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	52.3,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.7143179,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	33.815086,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	16.1,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Saint Lucia",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	245.03226,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	48.1,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.77531797,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	45.516705,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	11.7,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Saint Vincent and the Grenadines",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	235.89738,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	55,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.7564276,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	79.75236,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	8,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Samoa",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	172.51343,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	77.6,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.72747654,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	20.957987,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	9.2,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Sao Tome and Principe",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	205.38263,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	35.4,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.6856623,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	38.668613,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	5.5,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Saudi Arabia",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	93.94001,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	69.7,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.9783695,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	117.47001,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	18.7,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Senegal",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	19.979994,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	28.4,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.6057851,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	153.33995,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	3.1,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Serbia",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	144.85999,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	57.1,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.9204453,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	107.429985,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	9.1,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Seychelles",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	170.46439,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	36.8,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.58304435,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	162.24562,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	8.5,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Sierra Leone",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	30.779991,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	27.7,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.67456883,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	60.519985,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	2.1,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Slovakia",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	73.62998,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	56.2,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.7046653,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	114.929985,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	5.8,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Slovenia",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	116.00011,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	56.1,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.6617342,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	175.33015,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	5.8,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Solomon Islands",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	37.549732,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	55,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.75702685,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	13.799902,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	19.8,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"South Africa",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	40.289997,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	53.8,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.67780274,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	39.719997,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	10.8,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Spain",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	116.80999,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	61.6,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.5163596,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	107.799995,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	10.3,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Sri Lanka",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	48.600002,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	23.3,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.52923423,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	77.15001,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	11.3,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Suriname",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	81.53013,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	58.9,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.8097341,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	59.750095,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	12.7,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Sweden",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	105.49004,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	56.4,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.59760904,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	175.21008,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	5,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Switzerland",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	124.790016,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	54.3,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.5117263,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	158.13002,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	4.6,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Syria",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	82.570015,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	61.4,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	1.1003003,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	134.09001,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	14.9,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Tajikistan",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	37.13993,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	45.3,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	1.1248058,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	263.84952,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	6.6,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Tanzania",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	69.98999,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	27.7,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.60406667,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	36.289997,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	12.3,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Thailand",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	71.83,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	32.6,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.49365497,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	40.06,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	9.7,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Togo",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	7.190001,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	28.1,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.63797826,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	42.330006,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	2.1,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Trinidad and Tobago",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	76.159454,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	46,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.7901246,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	72.659485,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	12.7,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Tunisia",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	123.12002,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	61.6,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.9047389,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	257.01004,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	9.6,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Turkey",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	139.37999,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	66.8,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.66295815,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	248.52997,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	14.5,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Turkmenistan",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	60.3,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	51.8,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	1.1262851,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	121.64,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	6.7,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Uganda",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	183.06,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	22.4,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.5745145,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	29.06,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	4.6,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Ukraine",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	61.849995,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	58.4,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	1.139692,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	182.15999,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	5.6,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"United Arab Emirates",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	117.540016,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	67.8,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	1.1214612,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	151.84001,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	16.4,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"United Kingdom",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	107.8,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	63.7,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.5566855,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	170.11,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	6.3,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"United States",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	181.78,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	67.9,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.6934828,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	126.47,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	10.7,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Uruguay",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	101.90986,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	62.9,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.54657763,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	110.66984,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	9,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Uzbekistan",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	108.91999,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	48.2,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	1.492983,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	262.77997,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	7,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Vanuatu",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	76.39857,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	57.1,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.80152667,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	53.319,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	15.6,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Venezuela",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	85.470024,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	63.4,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.48178035,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	49.59001,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	9.6,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Vietnam",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	92.75001,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	18.3,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.6132994,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	179.09001,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	6.1,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Yemen",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	35.999996,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	48.8,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	1.0597163,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	24.809998,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	5.4,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Zambia",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	7.5299997,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	27.8,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.57380533,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	21.099998,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	11.9,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}, {
+		"name":	"Zimbabwe",
+		"data":	[{
+				"axis":	"Fruit Consumption",
+				"value":	14.419995,
+				"year":	2021,
+				"min":	1.3946594,
+				"max":	467.7423
+			}, {
+				"axis":	"Overweight/Obese",
+				"value":	38.2,
+				"year":	2016,
+				"min":	4.6,
+				"max":	88.5
+			}, {
+				"axis":	"Cardiovascular Incidences",
+				"value":	0.67369103,
+				"year":	2019,
+				"min":	0.3255594,
+				"max":	1.5668799
+			}, {
+				"axis":	"Vegetable Consumption",
+				"value":	13.479995,
+				"year":	2021,
+				"min":	2.3036795,
+				"max":	450.11923
+			}, {
+				"axis":	"Diabetes Prevalance",
+				"value":	2.1,
+				"year":	2021,
+				"min":	1.9,
+				"max":	30.8
+			}]
+	}]

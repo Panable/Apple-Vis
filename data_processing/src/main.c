@@ -11,6 +11,11 @@
 
 #define get_obj cJSON_GetObjectItemCaseSensitive
 
+typedef struct {
+    double min;
+    double max;
+} MinMax;
+
 void write_json(cJSON* json, const char* file_name)
 {
     // write csv
@@ -296,6 +301,36 @@ void find_max(cJSON* json)
     PL_LOG(PL_INFO, "The maximum fruit consumption value is %f from country: %s, year %f", maximum.value, maximum.country, maximum.year);
 }
 
+MinMax find_min_max(cJSON* json, const char* obj_name)
+{
+    MinMax ret = {
+        .max = 0,
+        .min = 0,
+    };
+
+    cJSON* country = NULL;
+    cJSON_ArrayForEach(country, json) {
+        cJSON* obj = get_obj(country, obj_name);
+        cJSON* c_name = get_obj(country, "name");
+        assert(cJSON_IsString(c_name));
+
+        cJSON* individual_fruit = NULL;
+        cJSON_ArrayForEach(individual_fruit, obj) {
+            cJSON* val = get_obj(individual_fruit, "value");
+            cJSON* year = get_obj(individual_fruit, "year");
+            assert(cJSON_IsNumber(val));
+            assert(cJSON_IsNumber(year));
+            double fc_val = val->valuedouble;
+
+            if (fc_val < ret.min || ret.min == 0)
+                ret.min = fc_val;
+            if (fc_val > ret.max)
+                ret.max = fc_val;
+        }
+    }
+    return ret;
+}
+
 void find_min(cJSON* json)
 {
     typedef struct {
@@ -353,8 +388,8 @@ cJSON* generate_all_intermediaries(void)
     CSV* vegetable_consumption = parse_csv("datasets/vegetable-consumption-per-capita.csv");
     general_intermediary_json(intermediary, vegetable_consumption, "vegetable_consumption", false);
 
-    CSV* diabetes = parse_csv("datasets/vegetable-consumption-per-capita.csv");
-    general_intermediary_json(intermediary, diabetes, "diabetes_prevelance", false);
+    CSV* diabetes = parse_csv("datasets/diabetes-prevalence.csv");
+    general_intermediary_json(intermediary, diabetes, "diabetes_prevalance", false);
 
     csv_free(fruit_consumption_csv);
     csv_free(overweight_csv);
@@ -367,6 +402,77 @@ cJSON* generate_all_intermediaries(void)
     return intermediary;
 }
 
+const char* better_name(const char* name)
+{
+    bool fc = strcmp(name, "fruit_consumption") == 0;
+    bool ov = strcmp(name, "overweight") == 0;
+    bool ci = strcmp(name, "cardiovascular_incidences") == 0;
+    bool vc = strcmp(name, "vegetable_consumption") == 0;
+    bool dp = strcmp(name, "diabetes_prevalance") == 0;
+
+    if (fc)
+        return "Fruit Consumption";
+    else if (ov)
+        return "Overweight/Obese";
+    else if (ci)
+        return "Cardiovascular Incidences";
+    else if (vc)
+        return "Vegetable Consumption";
+    else if (dp)
+        return "Diabetes Prevalance";
+    return NULL;
+}
+
+cJSON* generate_radar(cJSON* json)
+{
+    cJSON* processed = cJSON_CreateArray();
+    assert(processed);
+
+    cJSON* country = NULL;
+    cJSON_ArrayForEach(country, json) {
+        cJSON* data = NULL;
+        cJSON* new_country = NULL;
+        cJSON* new_data = NULL;
+        cJSON_ArrayForEach(data, country) {
+            if (strcmp(data->string, "name") == 0)
+            {
+                // create new country
+                new_country = cJSON_CreateObject();
+                cJSON_AddStringToObject(new_country, "name", data->valuestring);
+                new_data = cJSON_CreateArray();
+            }
+            else if (cJSON_IsArray(data))
+            {
+                cJSON* atomic = cJSON_CreateObject();
+                size_t sz = cJSON_GetArraySize(data);
+                cJSON* last_item = cJSON_GetArrayItem(data, sz - 1);
+
+                char* name   = data->string;
+                MinMax mm = find_min_max(json, name);
+                double value = get_obj(last_item, "value")->valuedouble;
+                double year  = get_obj(last_item, "year")->valuedouble;
+                double min   = mm.min;
+                double max   = mm.max;
+
+                cJSON_AddStringToObject(atomic, "axis", better_name(name));
+                cJSON_AddNumberToObject(atomic, "value", value);
+                cJSON_AddNumberToObject(atomic, "year", year);
+                cJSON_AddNumberToObject(atomic, "min", min);
+                cJSON_AddNumberToObject(atomic, "max", max);
+                cJSON_AddItemToArray(new_data, atomic);
+
+                char* item_str = cJSON_Print(last_item);
+                PL_LOG(PL_INFO, "%s is an array of size %zu", data->string, sz);
+                PL_LOG(PL_INFO, "the item is %s", item_str);
+            }
+            assert(true && "Something went wrong");
+        }
+        cJSON_AddItemToObject(new_country, "data", new_data);
+        cJSON_AddItemToArray(processed, new_country);
+    }
+    return processed;
+}
+
 int main(void)
 {
     /* Generate intermediary JSON (data_all.json) */
@@ -375,19 +481,22 @@ int main(void)
     find_min(intermediary);
     write_json(intermediary, "processed_data/data_all.json");
     process_world_map("processed_data/data_all.json");
-    cJSON* data_all_full = exist_all(intermediary, 5, 
+    cJSON* data_complete = exist_all(intermediary, 5, 
             "fruit_consumption", 
             "overweight", 
             "cardiovascular_incidences", 
             "vegetable_consumption", 
-            "diabetes_prevelance");
-    write_json(data_all_full, "processed_data/data_complete.json");
+            "diabetes_prevalance");
+    write_json(data_complete, "processed_data/data_complete.json");
+
+    cJSON* radar_json = generate_radar(data_complete);
+    write_json(radar_json, "processed_data/radar.json");
 
     /* Generate specific data for graphs */
     cJSON* fruit_to_obese = exist_all(intermediary, 2, "fruit_consumption", "overweight");
     write_json(fruit_to_obese, "processed_data/fruit_to_obese.json");
 
-    cJSON_Delete(data_all_full);
+    cJSON_Delete(data_complete);
     cJSON_Delete(intermediary);
     cJSON_Delete(fruit_to_obese);
     return 0;
