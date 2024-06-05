@@ -97,6 +97,42 @@ void process_world_map(const char* name)
     cJSON_Delete(world_map);
 }
 
+void process_world_map2(const char* name)
+{
+    cJSON* fruit_consumption = open_json(name);
+    cJSON* world_map = open_json("datasets/world.geojson");
+
+    cJSON* features = get_obj(world_map, "features");
+    
+    // Iterate over geometries array
+    cJSON* country = NULL;
+    cJSON_ArrayForEach(country, features)
+    {
+        cJSON* properties = get_obj(country, "properties");
+        if (properties)
+        {
+            cJSON* name = get_obj(properties, "name");
+            // cJSON_AddStringToObject(properties, "hello", "bing");
+            if (name && cJSON_IsString(name)) {
+                cJSON* fruit_consumption_data = search_json(fruit_consumption, name->valuestring);
+                if (fruit_consumption_data) {
+                    cJSON_AddItemToObject(properties, "fruit_consumption", fruit_consumption_data);
+                }
+            } 
+            else
+            {
+                printf("Name not found or not a string\n");
+            }
+        }
+    }
+
+
+    write_json(world_map, "processed_data/world_map.json");
+
+    cJSON_Delete(world_map);
+}
+
+
 int find_matching_method(CSV* csv, const char* country, size_t cur_index)
 {   
     size_t country_index = get_column_index(csv, "Reference area");
@@ -479,7 +515,6 @@ int main(void)
     find_max(intermediary);
     find_min(intermediary);
     write_json(intermediary, "processed_data/data_all.json");
-    process_world_map("processed_data/data_all.json");
     cJSON* data_complete = exist_all(intermediary, 5, 
             "fruit_consumption", 
             "overweight", 
@@ -487,6 +522,7 @@ int main(void)
             "vegetable_consumption", 
             "diabetes_prevalance");
     write_json(data_complete, "processed_data/data_complete.json");
+    process_world_map2("processed_data/data_complete.json");
 
     cJSON* radar_json = generate_radar(data_complete);
     write_json(radar_json, "processed_data/radar.json");

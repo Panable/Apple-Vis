@@ -152,6 +152,10 @@ function updateChart(data, selectedCountry) {
     y0.domain([0, 500]).nice();
     y1.domain([0, 1.6]).nice();
 
+    let color_pallete = ['#ffffcc','#ffeda0','#fed976','#feb24c','#fd8d3c','#fc4e2a','#e31a1c','#bd0026','#800026'];
+    let color = d3.scaleQuantize().range(color_pallete);
+    color.domain([1, 500]);
+
     g.select(".axis--x")
         .call(d3.axisBottom(x))
         .selectAll("text")
@@ -185,7 +189,7 @@ function updateChart(data, selectedCountry) {
         .attr("y", d => y0(d.value))
         .attr("width", x.bandwidth())
         .attr("height", d => height - y0(d.value))
-        .attr("fill", "steelblue");
+        .attr("fill", d => color(d.value));
 
     bars.exit().remove();
 

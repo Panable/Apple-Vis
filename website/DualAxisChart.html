@@ -6,35 +6,15 @@
     <link href="css/main.css" rel="stylesheet" />
     <script src="https://d3js.org/d3.v6.min.js"></script>
     <script src="js/DualAxisChart.js"></script>
-    <style>
-        .axis path,
-        .axis line {
-            fill: none;
-            stroke: #000;
-            shape-rendering: crispEdges;
-        }
-
-        .bar {
-            fill: steelblue;
-        }
-
-        .line {
-            fill: none;
-            stroke: red;
-            stroke-width: 2px;
-        }
-
-        .legend {
-            font-size: 12px;
-        }
-
-        .legend rect {
-            stroke-width: 2;
-        }
-    </style>
 </head>
 <body>
-    <div style="display: flex;">
+<div class="navbar">
+  <a href="WorldMap.html">World Map</a>
+  <a href="RadarChart.html">Radar Chart</a>
+  <a class="active" href="DualAxisChart.html">Dual Axis Chart</a>
+</div>
+    <h1>Dual Axis Bar and Line Chart</h1>
+    <div class="radar-cont">
         <section class="selection">
             <h2>Legend</h2>
             <div class="legend" id="legendContainer"></div>

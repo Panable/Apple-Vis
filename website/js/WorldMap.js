@@ -29,10 +29,9 @@ function init() {
         .style('opacity', 0);
 
     d3.json("../data_processing/processed_data/world_map.json").then(data => {
-        const countries = topojson.feature(data, data.objects.countries);
         color.domain([1, 500]);
 
-        g.selectAll('path').data(countries.features).enter().append('path').attr('class', 'country').attr('d', path)
+        g.selectAll('path').data(data.features).enter().append('path').attr('class', 'country').attr('d', path)
             .style("fill", function (d) {
                 let value = d.properties.fruit_consumption;
                 if (value) {
@@ -57,9 +56,9 @@ function init() {
                 tooltip.transition().style('opacity', 0);
             })
             .on('click', function(event, d) {
-                window.location.href = `RadarChart.html?country=${d.properties.name}`;
+                var countryName = encodeURIComponent(d.properties.name);
+                window.location.href = `RadarChart.html?country=${countryName}`;
             });
-
 
         const handleLegendMouseOver = (d, i) => {
             // Change the fill color and border width of all paths
