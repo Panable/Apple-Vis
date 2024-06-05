@@ -3,7 +3,7 @@
 set -e
 
 CC=cc
-LIBS="-lc -lncurses -lcjson"
+LIBS="-lc -lm -lncurses -lcjson"
 CFLAGS="-Wall -Wextra -std=c11 -pedantic -ggdb"
 SRC="src/main.c src/pl_utils.c"
 MACROS="-DPL_LOGGING"

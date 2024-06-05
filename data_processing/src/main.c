@@ -8,6 +8,7 @@
 #define CSV_PARSER_IMPLEMENTATION
 #include "csv_parser.h"
 #include "pl_utils.h"
+#include <math.h>
 
 #define get_obj cJSON_GetObjectItemCaseSensitive
 
@@ -191,6 +192,9 @@ cJSON* general_intermediary_json(cJSON* json, CSV* csv, const char* name, bool g
         char* eptr;
         assert(cur_value);
         double val = strtod(cur_value, &eptr);
+        char* val_rounded = malloc(100); 
+        sprintf(val_rounded, "%.2f", val);
+        val = strtod(val_rounded, &eptr);
 
         cJSON* cur_data = cJSON_CreateObject();
 
@@ -198,7 +202,7 @@ cJSON* general_intermediary_json(cJSON* json, CSV* csv, const char* name, bool g
         cJSON_AddNumberToObject(cur_data, "value", val);
 
         cJSON_AddItemToArray(data, cur_data);
-
+        free(val_rounded);
     }
     return json;
 }
@@ -298,7 +302,6 @@ void find_max(cJSON* json)
             }
         }
     }
-    PL_LOG(PL_INFO, "The maximum fruit consumption value is %f from country: %s, year %f", maximum.value, maximum.country, maximum.year);
 }
 
 MinMax find_min_max(cJSON* json, const char* obj_name)
@@ -460,10 +463,6 @@ cJSON* generate_radar(cJSON* json)
                 cJSON_AddNumberToObject(atomic, "min", min);
                 cJSON_AddNumberToObject(atomic, "max", max);
                 cJSON_AddItemToArray(new_data, atomic);
-
-                char* item_str = cJSON_Print(last_item);
-                PL_LOG(PL_INFO, "%s is an array of size %zu", data->string, sz);
-                PL_LOG(PL_INFO, "the item is %s", item_str);
             }
             assert(true && "Something went wrong");
         }
