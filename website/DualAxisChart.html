@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dual Axis Bar and Line Chart</title>
+    <link href="css/main.css" rel="stylesheet" />
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="js/DualAxisChart.js"></script>
+    <style>
+        .axis path,
+        .axis line {
+            fill: none;
+            stroke: #000;
+            shape-rendering: crispEdges;
+        }
+
+        .bar {
+            fill: steelblue;
+        }
+
+        .line {
+            fill: none;
+            stroke: red;
+            stroke-width: 2px;
+        }
+
+        .legend {
+            font-size: 12px;
+        }
+
+        .legend rect {
+            stroke-width: 2;
+        }
+    </style>
+</head>
+<body>
+    <div style="display: flex;">
+        <section class="selection">
+            <h2>Legend</h2>
+            <div class="legend" id="legendContainer"></div>
+            <h2>Countries</h2>
+            <div class="radio-container" id="radioContainer"></div>
+        </section>
+        <svg width="960" height="500"></svg>
+    </div>
+</body>
+</html>
