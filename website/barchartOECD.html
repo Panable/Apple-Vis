@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Bar Chart</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        .bar {
+            fill: steelblue;
+        }
+        .bar:hover {
+            fill: orange;
+        }
+        .tooltip {
+            position: absolute;
+            text-align: center;
+            width: auto;
+            height: auto;
+            padding: 8px;
+            font: 12px sans-serif;
+            background: lightsteelblue;
+            border: 0px;
+            border-radius: 8px;
+            pointer-events: none;
+        }
+        .axis-label {
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .subtitle {
+            font-size: 14px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .chart-container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="chart-container">
+        <h1>Fruit Consumption by Country</h1>
+        <div class="subtitle">Unit of Measure: Percentage of Population</div>
+        <svg width="960" height="600"></svg>
+    </div>
+    <script>
+        // Load the CSV data
+        d3.csv("fruit_consumption_all_countries_OECD.csv").then(data => {
+            data.forEach(d => {
+                d.percentage = +d.percentage;  // Ensure percentage is a number
+            });
+
+            const margin = {top: 20, right: 30, bottom: 150, left: 60}; // Define the margin
+            const width = 960 - margin.left - margin.right;
+            const height = 600 - margin.top - margin.bottom;
+
+            const x = d3.scaleBand()
+                .domain(data.map(d => d.country_name)) // Use the country name as the domain
+                .range([margin.left, width - margin.right])
+                .padding(0.1); 
+
+            const y = d3.scaleLinear()
+                .domain([0, d3.max(data, d => d.percentage)]).nice() // Use the percentage as the domain
+                .range([height - margin.bottom, margin.top]);
+
+            const xAxis = g => g
+                .attr("transform", `translate(0,${height - margin.bottom})`) // Move the x axis to the bottom
+                .call(d3.axisBottom(x).tickSizeOuter(0))
+                .selectAll("text")
+                .attr("transform", "rotate(-45)")
+                .style("text-anchor", "end");
+
+            const yAxis = g => g
+                .attr("transform", `translate(${margin.left},0)`) // Move the y axis to the left
+                .call(d3.axisLeft(y))
+                .call(g => g.select(".domain").remove());
+
+            const svg = d3.select("svg")
+                .attr("width", width + margin.left + margin.right) // Add margin to the width
+                .attr("height", height + margin.top + margin.bottom) // Add margin to the height
+                .append("g")
+                .attr("transform", `translate(${margin.left},${margin.top})`);
+
+            svg.append("g")
+                .selectAll(".bar")
+                .data(data)
+                .enter().append("rect")
+                .attr("class", "bar")
+                .attr("x", d => x(d.country_name)) // Use the country name as the x position
+                .attr("y", d => y(d.percentage))
+                .attr("height", d => y(0) - y(d.percentage)) // Set the height of the bar
+                .attr("width", x.bandwidth());
+
+            svg.append("g")
+                .call(xAxis);
+
+            svg.append("g")
+                .call(yAxis);
+
+            // X axis label
+            svg.append("text")
+                .attr("class", "axis-label")
+                .attr("text-anchor", "middle")
+                .attr("x", width / 2)
+                .attr("y", height - margin.bottom + 90)
+                .text("Countries");
+
+            // Y axis label
+            svg.append("text")
+                .attr("class", "axis-label") // Add class to the y axis label
+                .attr("text-anchor", "middle")
+                .attr("transform", "rotate(-90)")
+                .attr("x", -height / 2)
+                .attr("y", -margin.left + 20)
+                .text("Percentage");
+
+            const tooltip = d3.select("body").append("div")
+                .attr("class", "tooltip")
+                .style("opacity", 0);
+
+            svg.selectAll(".bar")
+                .on("mouseover", function(event, d) {
+                    d3.selectAll(".bar")
+                        .attr("fill-opacity", 0.5);
+                    d3.select(this)
+                        .attr("fill-opacity", 1.0)
+                        .style("fill", "orange");
+                    tooltip.transition()
+                        .duration(200)
+                        .style("opacity", .9);
+                    tooltip.html("Country: " + d.country_name + "<br>Percentage: " + d.percentage)
+                        .style("left", (event.pageX + 5) + "px")
+                        .style("top", (event.pageY - 28) + "px");
+                })
+                .on("mouseout", function(d) {
+                    d3.selectAll(".bar")
+                        .attr("fill-opacity", 1.0)
+                        .style("fill", "steelblue");
+                    tooltip.transition()
+                        .duration(500)
+                        .style("opacity", 0);
+                });
+        }).catch(error => {
+            console.error('Error loading the CSV file:', error);
+        });
+    </script>
+</body>
+</html>
