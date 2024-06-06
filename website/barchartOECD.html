@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Bar Chart</title>
     <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link href="css/main.css" rel="stylesheet" />
     <style>
-        .bar {
-            fill: steelblue;
-        }
         .bar:hover {
             fill: orange;
         }
@@ -19,7 +17,7 @@
             height: auto;
             padding: 8px;
             font: 12px sans-serif;
-            background: lightsteelblue;
+            background: #2B2B2B;
             border: 0px;
             border-radius: 8px;
             pointer-events: none;
@@ -39,14 +37,25 @@
     </style>
 </head>
 <body>
+<div class="navbar">
+    <a href="WorldMap.html">World Map</a>
+    <a href="RadarChart.html">Radar Chart</a>
+    <a href="DualAxisChart.html">Dual Axis Chart</a>
+    <a class="active" href="barchartOECD.html">Bar Chart</a>
+</div>
     <div class="chart-container">
         <h1>Fruit Consumption by Country</h1>
         <div class="subtitle">Unit of Measure: Percentage of Population</div>
         <svg width="960" height="600"></svg>
     </div>
     <script>
+
+        let color_pallete = ['#ffffcc','#fed976','#feb24c','#fd8d3c','#fc4e2a','#e31a1c','#bd0026','#800026'];
+        let color = d3.scaleQuantize().range(color_pallete);
+        color.domain([1, 100]);
         // Load the CSV data
-        d3.csv("fruit_consumption_all_countries_OECD.csv").then(data => {
+        let dir = '../data_processing/processed_data/fruit_consumption_all_countries_OECD.csv';
+        d3.csv(dir).then(data => {
             data.forEach(d => {
                 d.percentage = +d.percentage;  // Ensure percentage is a number
             });
@@ -89,6 +98,7 @@
                 .attr("class", "bar")
                 .attr("x", d => x(d.country_name)) // Use the country name as the x position
                 .attr("y", d => y(d.percentage))
+                .attr("fill", d => color(d.percentage))
                 .attr("height", d => y(0) - y(d.percentage)) // Set the height of the bar
                 .attr("width", x.bandwidth());
 
@@ -104,6 +114,7 @@
                 .attr("text-anchor", "middle")
                 .attr("x", width / 2)
                 .attr("y", height - margin.bottom + 90)
+                .attr("fill", "#FFF")
                 .text("Countries");
 
             // Y axis label
@@ -113,6 +124,7 @@
                 .attr("transform", "rotate(-90)")
                 .attr("x", -height / 2)
                 .attr("y", -margin.left + 20)
+                .attr("fill", "#FFF")
                 .text("Percentage");
 
             const tooltip = d3.select("body").append("div")
@@ -122,10 +134,8 @@
             svg.selectAll(".bar")
                 .on("mouseover", function(event, d) {
                     d3.selectAll(".bar")
-                        .attr("fill-opacity", 0.5);
                     d3.select(this)
-                        .attr("fill-opacity", 1.0)
-                        .style("fill", "orange");
+                        .style("fill", "#00805A");
                     tooltip.transition()
                         .duration(200)
                         .style("opacity", .9);
@@ -135,8 +145,7 @@
                 })
                 .on("mouseout", function(d) {
                     d3.selectAll(".bar")
-                        .attr("fill-opacity", 1.0)
-                        .style("fill", "steelblue");
+                        .style("fill", d => color(d.percentage));
                     tooltip.transition()
                         .duration(500)
                         .style("opacity", 0);
