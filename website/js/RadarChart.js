@@ -1,5 +1,34 @@
 window.onload = startRadar;
 
+function LightenDarkenColor(col, amt) {
+  
+    var usePound = false;
+  
+    if (col[0] == "#") {
+        col = col.slice(1);
+        usePound = true;
+    }
+ 
+    var num = parseInt(col,16);
+ 
+    var r = (num >> 16) + amt;
+ 
+    if (r > 255) r = 255;
+    else if  (r < 0) r = 0;
+ 
+    var b = ((num >> 8) & 0x00FF) + amt;
+ 
+    if (b > 255) b = 255;
+    else if  (b < 0) b = 0;
+ 
+    var g = (num & 0x0000FF) + amt;
+ 
+    if (g > 255) g = 255;
+    else if (g < 0) g = 0;
+ 
+    return (usePound?"#":"") + (g | (b << 8) | (r << 16)).toString(16);
+  
+}
 // Function to parse query parameters from URL
 function getParameterByName(name, url) {
     if (!url) url = window.location.href;
@@ -242,7 +271,7 @@ function RadarChart(id, data, options) {
         .data(function(d) { return d.data; })
         .enter().append("circle")
         .attr("class", "radarCircle")
-        .attr("r", cfg.dotRadius)
+        .attr("r", cfg.dotRadius + 1)
         .attr("cx", function(d, i) { 
             return rScale((d.value - d.min) / (d.max - d.min)) * Math.cos(angleSlice * i - Math.PI / 2); 
         })
@@ -252,7 +281,7 @@ function RadarChart(id, data, options) {
         .style("fill", function(d, i) { 
             var parentIndex = d3.select(this.parentNode).datum().index;
             console.log(parentIndex);  // Log the parent index to debug
-            return cfg.color(parentIndex); 
+            return LightenDarkenColor(cfg.color(parentIndex), 80);
         })
         .style("fill-opacity", 0.8);
 

@@ -17,6 +17,7 @@ function startChart() {
         generateRadioButtons(data, country);
         generateLegend();
         drawChart(data, country);
+        updateChart(data, country);
     }).catch(error => {
         console.error('Error loading JSON data:', error);
     });
@@ -124,10 +125,22 @@ function drawChart(data, selectedCountry) {
         .attr("text-anchor", "middle")
         .text("Cardiovascular Incidences");
 
-    updateChart(data, selectedCountry);
+    // Define tooltip once
+    const tooltip = d3.select("body").append("div")
+        .attr("class", "tooltip")
+        .style("position", "absolute")
+        .style("visibility", "hidden")
+        .style("background-color", "#2B2B2B")
+        .style("border", "solid")
+        .style("border-width", "1px")
+        .style("border-radius", "5px")
+        .style("padding", "10px")
+        .style("pointer-events", "none");
+
+    updateChart(data, selectedCountry, tooltip);
 }
 
-function updateChart(data, selectedCountry) {
+function updateChart(data, selectedCountry, tooltip) {
     const svg = d3.select("svg"),
         margin = { top: 20, right: 80, bottom: 70, left: 60 },
         width = +svg.attr("width") - margin.left - margin.right,
@@ -193,6 +206,18 @@ function updateChart(data, selectedCountry) {
 
     bars.exit().remove();
 
+    bars.on("mouseover", function(event, d) {
+            tooltip.style("visibility", "visible")
+                .html(`Year: ${d.year}<br>Fruit Consumption: ${d.value}`);
+        })
+        .on("mousemove", function(event) {
+            tooltip.style("top", (event.pageY - 10) + "px")
+                .style("left", (event.pageX + 10) + "px");
+        })
+        .on("mouseout", function() {
+            tooltip.style("visibility", "hidden");
+        });
+
     const line = d3.line()
         .x(d => x(d.year) + x.bandwidth() / 2)
         .y(d => y1(d.value));
@@ -211,5 +236,301 @@ function updateChart(data, selectedCountry) {
         .attr("d", line);
 
     path.exit().remove();
+
+    const lineDots = g.selectAll(".line-dot")
+        .data(filteredCardiovascularIncidences, d => d.year);
+
+    lineDots.enter().append("circle")
+        .attr("class", "line-dot")
+        .attr("cx", d => x(d.year) + x.bandwidth() / 2)
+        .attr("cy", d => y1(d.value))
+        .attr("r", 4)
+        .attr("fill", "red");
+
+    lineDots.transition()
+        .duration(1000)
+        .attr("cx", d => x(d.year) + x.bandwidth() / 2)
+        .attr("cy", d => y1(d.value));
+
+    lineDots.exit().remove();
+
+    lineDots.on("mouseover", function(event, d) {
+            tooltip.style("visibility", "visible")
+                .html(`Year: ${d.year}<br>Cardiovascular Incidences: ${d.value}`);
+        })
+        .on("mousemove", function(event) {
+            tooltip.style("top", (event.pageY - 10) + "px")
+                .style("left", (event.pageX + 10) + "px");
+        })
+        .on("mouseout", function() {
+            tooltip.style("visibility", "hidden");
+        });
 }
 
+function updateChart(data, selectedCountry, tooltip) {
+    const svg = d3.select("svg"),
+        margin = { top: 20, right: 80, bottom: 70, left: 60 },
+        width = +svg.attr("width") - margin.left - margin.right,
+        height = +svg.attr("height") - margin.top - margin.bottom,
+        g = svg.select("g");
+
+    const x = d3.scaleBand().rangeRound([0, width]).padding(0.1),
+        y0 = d3.scaleLinear().rangeRound([height, 0]),
+        y1 = d3.scaleLinear().rangeRound([height, 0]);
+
+    const countryData = data.find(d => d.name === selectedCountry);
+    const fruitConsumption = countryData.fruit_consumption.map(v => ({ ...v, country: countryData.name }));
+    const cardiovascularIncidences = countryData.cardiovascular_incidences.map(v => ({ ...v, country: countryData.name }));
+
+    const startYear = d3.max([d3.min(fruitConsumption, d => d.year), d3.min(cardiovascularIncidences, d => d.year)]);
+    const endYear = d3.min([d3.max(fruitConsumption, d => d.year), d3.max(cardiovascularIncidences, d => d.year)]);
+
+    const filteredFruitConsumption = fruitConsumption.filter(d => d.year >= startYear && d.year <= endYear);
+    const filteredCardiovascularIncidences = cardiovascularIncidences.filter(d => d.year >= startYear && d.year <= endYear);
+
+    x.domain(filteredFruitConsumption.map(d => d.year));
+    y0.domain([0, 500]).nice();
+    y1.domain([0, 1.6]).nice();
+
+    let color_pallete = ['#ffffcc','#ffeda0','#fed976','#feb24c','#fd8d3c','#fc4e2a','#e31a1c','#bd0026','#800026'];
+    let color = d3.scaleQuantize().range(color_pallete);
+    color.domain([1, 500]);
+
+    g.select(".axis--x")
+        .call(d3.axisBottom(x))
+        .selectAll("text")
+        .attr("x", -5)
+        .attr("y", 10)
+        .attr("dy", ".35em")
+        .attr("transform", "rotate(-45)")
+        .style("text-anchor", "end");
+
+    g.select(".axis--y")
+        .transition().duration(1000)
+        .call(d3.axisLeft(y0));
+
+    g.select(".axis--y1")
+        .transition().duration(1000)
+        .call(d3.axisRight(y1));
+
+    const bars = g.selectAll(".bar")
+        .data(filteredFruitConsumption, d => d.year);
+
+    bars.enter().append("rect")
+        .attr("class", "bar")
+        .attr("x", d => x(d.year))
+        .attr("y", height)
+        .attr("width", x.bandwidth())
+        .attr("height", 0)
+        .merge(bars)
+        .transition()
+        .duration(1000)
+        .attr("x", d => x(d.year))
+        .attr("y", d => y0(d.value))
+        .attr("width", x.bandwidth())
+        .attr("height", d => height - y0(d.value))
+        .attr("fill", d => color(d.value));
+
+    bars.exit().remove();
+
+    bars.on("mouseover", function(event, d) {
+            tooltip.style("visibility", "visible")
+                .html(`Year: ${d.year}<br>Fruit Consumption: ${d.value}`);
+        })
+        .on("mousemove", function(event) {
+            tooltip.style("top", (event.pageY - 10) + "px")
+                .style("left", (event.pageX + 10) + "px");
+        })
+        .on("mouseout", function() {
+            tooltip.style("visibility", "hidden");
+        });
+
+    const line = d3.line()
+        .x(d => x(d.year) + x.bandwidth() / 2)
+        .y(d => y1(d.value));
+
+    const path = g.selectAll(".line")
+        .data([filteredCardiovascularIncidences]);
+
+    path.enter().append("path")
+        .attr("class", "line")
+        .attr("stroke", "#00805A")
+        .attr("stroke-width", 2)
+        .attr("fill", "none")
+        .merge(path)
+        .transition()
+        .duration(1000)
+        .attr("d", line);
+
+    path.exit().remove();
+
+    const lineDots = g.selectAll(".line-dot")
+        .data(filteredCardiovascularIncidences, d => d.year);
+
+    lineDots.enter().append("circle")
+        .attr("class", "line-dot")
+        .attr("cx", d => x(d.year) + x.bandwidth() / 2)
+        .attr("cy", d => y1(d.value))
+        .attr("r", 4)
+        .attr("fill", "red");
+
+    lineDots.transition()
+        .duration(1000)
+        .attr("cx", d => x(d.year) + x.bandwidth() / 2)
+        .attr("cy", d => y1(d.value));
+
+    lineDots.exit().remove();
+
+    lineDots.on("mouseover", function(event, d) {
+            tooltip.style("visibility", "visible")
+                .html(`Year: ${d.year}<br>Cardiovascular Incidences: ${d.value}`);
+        })
+        .on("mousemove", function(event) {
+            tooltip.style("top", (event.pageY - 10) + "px")
+                .style("left", (event.pageX + 10) + "px");
+        })
+        .on("mouseout", function() {
+            tooltip.style("visibility", "hidden");
+        });
+}
+
+function updateChart(data, selectedCountry) {
+    const svg = d3.select("svg"),
+        margin = { top: 20, right: 80, bottom: 70, left: 60 },
+        width = +svg.attr("width") - margin.left - margin.right,
+        height = +svg.attr("height") - margin.top - margin.bottom,
+        g = svg.select("g");
+
+    const x = d3.scaleBand().rangeRound([0, width]).padding(0.1),
+        y0 = d3.scaleLinear().rangeRound([height, 0]),
+        y1 = d3.scaleLinear().rangeRound([height, 0]);
+
+    const countryData = data.find(d => d.name === selectedCountry);
+    const fruitConsumption = countryData.fruit_consumption.map(v => ({ ...v, country: countryData.name }));
+    const cardiovascularIncidences = countryData.cardiovascular_incidences.map(v => ({ ...v, country: countryData.name }));
+
+    const startYear = d3.max([d3.min(fruitConsumption, d => d.year), d3.min(cardiovascularIncidences, d => d.year)]);
+    const endYear = d3.min([d3.max(fruitConsumption, d => d.year), d3.max(cardiovascularIncidences, d => d.year)]);
+
+    const filteredFruitConsumption = fruitConsumption.filter(d => d.year >= startYear && d.year <= endYear);
+    const filteredCardiovascularIncidences = cardiovascularIncidences.filter(d => d.year >= startYear && d.year <= endYear);
+
+    x.domain(filteredFruitConsumption.map(d => d.year));
+    y0.domain([0, 500]).nice();
+    y1.domain([0, 1.6]).nice();
+
+    let color_pallete = ['#ffffcc','#ffeda0','#fed976','#feb24c','#fd8d3c','#fc4e2a','#e31a1c','#bd0026','#800026'];
+    let color = d3.scaleQuantize().range(color_pallete);
+    color.domain([1, 500]);
+
+    g.select(".axis--x")
+        .call(d3.axisBottom(x))
+        .selectAll("text")
+        .attr("x", -5)
+        .attr("y", 10)
+        .attr("dy", ".35em")
+        .attr("transform", "rotate(-45)")
+        .style("text-anchor", "end");
+
+    g.select(".axis--y")
+        .transition().duration(1000)
+        .call(d3.axisLeft(y0));
+
+    g.select(".axis--y1")
+        .transition().duration(1000)
+        .call(d3.axisRight(y1));
+
+    const bars = g.selectAll(".bar")
+        .data(filteredFruitConsumption, d => d.year);
+
+    const tooltip = d3.select("body").append("div")
+        .attr("class", "tooltip")
+        .style("position", "absolute")
+        .style("visibility", "hidden")
+        .style("background-color", "#2B2B2B")
+        .style("border", "solid")
+        .style("border-width", "1px")
+        .style("border-radius", "5px")
+        .style("padding", "10px")
+        .style("pointer-events", "none");
+
+    bars.enter().append("rect")
+        .attr("class", "bar")
+        .attr("x", d => x(d.year))
+        .attr("y", height)
+        .attr("width", x.bandwidth())
+        .attr("height", 0)
+        .merge(bars)
+        .transition()
+        .duration(1000)
+        .attr("x", d => x(d.year))
+        .attr("y", d => y0(d.value))
+        .attr("width", x.bandwidth())
+        .attr("height", d => height - y0(d.value))
+        .attr("fill", d => color(d.value));
+
+    bars.exit().remove();
+
+    bars.on("mouseover", function(event, d) {
+            tooltip.style("visibility", "visible")
+                .html(`Year: ${d.year}<br>Fruit Consumption: ${d.value}`);
+        })
+        .on("mousemove", function(event) {
+            tooltip.style("top", (event.pageY - 10) + "px")
+                .style("left", (event.pageX + 10) + "px");
+        })
+        .on("mouseout", function() {
+            tooltip.style("visibility", "hidden");
+        });
+
+    const line = d3.line()
+        .x(d => x(d.year) + x.bandwidth() / 2)
+        .y(d => y1(d.value));
+
+    const path = g.selectAll(".line")
+        .data([filteredCardiovascularIncidences]);
+
+    path.enter().append("path")
+        .attr("class", "line")
+        .attr("stroke", "#00805A")
+        .attr("stroke-width", 2)
+        .attr("fill", "none")
+        .merge(path)
+        .transition()
+        .duration(1000)
+        .attr("d", line);
+
+    path.exit().remove();
+
+    const lineDots = g.selectAll(".line-dot")
+        .data(filteredCardiovascularIncidences, d => d.year);
+
+    // Handle enter selection
+    lineDots.enter().append("circle")
+        .attr("class", "line-dot")
+        .attr("cx", d => x(d.year) + x.bandwidth() / 2)
+        .attr("cy", d => y1(d.value))
+        .attr("r", 4)
+        .attr("fill", "green");
+
+    // Handle update selection
+    lineDots.transition()
+        .duration(1000)
+        .attr("cx", d => x(d.year) + x.bandwidth() / 2)
+        .attr("cy", d => y1(d.value));
+
+    // Handle exit selection
+    lineDots.exit().remove();
+
+    lineDots.on("mouseover", function(event, d) {
+            tooltip.style("visibility", "visible")
+                .html(`Year: ${d.year}<br>Cardiovascular Incidences: ${d.value}`);
+        })
+        .on("mousemove", function(event) {
+            tooltip.style("top", (event.pageY - 10) + "px")
+                .style("left", (event.pageX + 10) + "px");
+        })
+        .on("mouseout", function() {
+            tooltip.style("visibility", "hidden");
+        });
+}
