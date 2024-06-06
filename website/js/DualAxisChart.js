@@ -202,7 +202,7 @@ function updateChart(data, selectedCountry) {
 
     path.enter().append("path")
         .attr("class", "line")
-        .attr("stroke", "red")
+        .attr("stroke", "#00805A")
         .attr("stroke-width", 2)
         .attr("fill", "none")
         .merge(path)
