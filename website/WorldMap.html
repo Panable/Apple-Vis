@@ -4,31 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>World Map</title>
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <!-- Custom styles for this template -->
-    <link href="css/cover.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
     <script src="https://d3js.org/topojson.v1.min.js"></script>
     <script src="js/WorldMap.js"></script>
+  <style>
+        svg {
+            border: 1px solid darkgrey; /* Add border around the SVG */
+        }
+    </style>
   </head>
   <body>
-    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
-      <header class="masthead mb-auto">
-        <h3 class="masthead-brand">🍎 <- Your saviour? </h3>
-        <div class="inner">
-          <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link active" href="#">Home</a>
-            <a class="nav-link" href="WorldMap.html">World Map</a>
-            <a class="nav-link" href="RadarChart.html">Radar!</a>
-            <a class="nav-link" href="DualAxisChart.html">Heart disease?</a>
-            <a class="nav-link" href="DualAxisChart.html">OECD Bar chart</a>
-          </nav>
-        </div>
-    </div>
-      </header>
+<div class="navbar">
+  <a class="active" href="WorldMap.html">World Map</a>
+  <a href="RadarChart.html">Radar Chart</a>
+  <a href="DualAxisChart.html">Dual Axis Chart</a>
+  <a href="barchartOECD.html">Bar Chart</a>
+</div>
     <h1>World Map</h1>
     <p>You may zoom with scroll wheel and pan. Hover over the legend to view values within selected range. Click on the country to view radar graph</p>
     <div id="reset"></div>
