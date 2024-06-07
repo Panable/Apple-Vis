@@ -1,30 +1,51 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Radar Graph</title>
-  <link href="css/main.css" rel="stylesheet" />
-  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
-  <script src="js/RadarChart.js"></script>
-</head>
-<body>
-<div class="navbar">
-  <a href="WorldMap.html">World Map</a>
-  <a class="active" href="RadarChart.html">Radar Chart</a>
-  <a href="DualAxisChart.html">Dual Axis Chart</a>
-  <a href="barchartOECD.html">Bar Chart</a>
-</div>
-  <h1>Radar Graph</h1>
-  <div class="radar-cont" style="display: flex;">
-    <section class="selection">
-      <h2>Legend</h2>
-      <div class="legend"></div> <!-- Move the legend container here -->
-      <h2>Countries</h2>
-      <div class="checkbox-container" id="checkboxContainer"></div>
-    </section>
-    <div class="radarChart"></div>
-  </div>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Radar Graph</title>
+    <link href="css/main.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="js/RadarChart.js"></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="index.html">Home</a>
+      <div style="float: right">
+        <a href="WorldMap.html">World Map</a>
+        <a class="active" href="RadarChart.html">Radar Chart</a>
+        <a href="DualAxisChart.html">Dual Axis Chart</a>
+        <a href="barchartOECD.html">Bar Chart</a>
+      </div>
+    </div>
+    <h1>Radar Graph</h1>
+    <div class="radar-cont" style="display: flex">
+      <section class="selection">
+        <h2>Legend</h2>
+        <div class="legend"></div>
+        <!-- Move the legend container here -->
+        <h2>Countries</h2>
+        <div class="checkbox-container" id="checkboxContainer"></div>
+      </section>
+      <div class="radarChart"></div>
+    </div>
+    <p>
+      <strong>Fruit consumption</strong> -> average per person, measured in
+      kilograms per year.
+    </p>
+    <p>
+      <strong>Overweight/Obese</strong> -> percentage of population over 25 bmi
+    </p>
+    <p>
+      <strong>Cardiovascular Incidences</strong> -> share of the
+      population who newly develop cardiovascular diseases, in a given year.
+    </p>
+    <p>
+      <strong>Vegetable consumption</strong> -> measured in kilograms per person
+      per year.
+    </p>
+    <p>
+      <strong>Diabetes Prevalance</strong> -> percentage of population with diabetes
+    </p>
+  </body>
 </html>

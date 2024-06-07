@@ -89,7 +89,8 @@ h2 {
 }
 
 .story {
-	width: 50%;
+	margin: 3em;
+	font-size: 1.5em;
 }
 
 .reset-button {
