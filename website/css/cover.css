@@ -54,6 +54,7 @@ body {
  */
 .masthead {
   margin-bottom: 2rem;
+
 }
 
 .masthead .inner {
@@ -62,6 +63,7 @@ body {
 
 .masthead-brand {
   margin-bottom: 0;
+  white-space: nowrap;
 }
 
 .nav-masthead .nav-link {
@@ -70,6 +72,7 @@ body {
   color: rgba(255, 255, 255, .5);
   background-color: transparent;
   border-bottom: .25rem solid transparent;
+  white-space: nowrap;
 }
 
 .nav-masthead .nav-link:hover,
